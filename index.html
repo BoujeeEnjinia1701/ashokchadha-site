@@ -1,0 +1,914 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ashok Kumar Chadha, Architect</title>
+<meta name="description" content="Ashok Kumar Chadha is an architect and lighting specialist with 53 years of practice in India, Iran and Kuwait. He now designs houses, interiors and lighting for a small number of clients.">
+<meta property="og:title" content="Ashok Kumar Chadha, Architect">
+<meta property="og:description" content="Architect and lighting specialist. Fifty-three years of practice from Chandigarh to Kuwait, now designing houses in India.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#22275C">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&family=IBM+Plex+Mono:wght@400;500&family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap">
+<style>
+/* Layout: a calm professional portfolio. Portrait-led introduction, image-led project grid with detail panels,
+   a short career narrative with the full record on demand. Architectural flavour lives in the details:
+   hairline rules with tick ends, figure numbers, a drawn section, red-pencil accents. */
+:root{
+  --bg:#F4F4F0; --surface:#FBFBF8; --ink:#22275C; --text:#2A2D45; --muted:#5E6280; --rule:#D3D4DD; --wash:#E9EAEF;
+  --red:#B03A2E; --z-pub:rgba(176,58,46,.16); --z-fam:rgba(34,39,92,.10); --z-pri:rgba(46,125,98,.17); --z-svc:rgba(196,150,40,.20);
+  --f-display:"Archivo","Arial Narrow",Helvetica,sans-serif;
+  --f-body:"Spectral",Georgia,"Times New Roman",serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --gut:clamp(16px,4vw,48px);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121829; --surface:#182037; --ink:#E4E8F5; --text:#D7DBE8; --muted:#9EA6C2; --rule:#2E3854; --wash:#1E2741; --red:#F08A78; --z-pub:rgba(240,138,120,.22); --z-fam:rgba(160,175,230,.14); --z-pri:rgba(110,200,165,.20); --z-svc:rgba(230,190,90,.22); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121829; --surface:#182037; --ink:#E4E8F5; --text:#D7DBE8; --muted:#9EA6C2; --rule:#2E3854; --wash:#1E2741; --red:#F08A78; --z-pub:rgba(240,138,120,.22); --z-fam:rgba(160,175,230,.14); --z-pri:rgba(110,200,165,.20); --z-svc:rgba(230,190,90,.22); color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--f-body);font-size:18px;line-height:1.62}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+img{max-width:100%;display:block}
+.wrap{max-width:1200px;margin:0 auto;padding-inline:var(--gut)}
+h1,h2,h3,h4{font-family:var(--f-display);color:var(--ink);font-weight:600;text-wrap:balance;margin:0;line-height:1.12}
+p{margin:0}
+.eyebrow{font-family:var(--f-display);font-stretch:115%;font-weight:600;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--red)}
+.small{font-size:14px;color:var(--muted)}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:60px}
+.mark{font-family:var(--f-display);font-weight:700;font-stretch:80%;font-size:19px;color:var(--ink);text-decoration:none;letter-spacing:.01em;white-space:nowrap}
+.mark span{font-weight:400;color:var(--muted);font-stretch:100%;font-size:14px;margin-left:8px}
+.nav{display:flex;gap:clamp(12px,2.4vw,30px);overflow-x:auto;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav a{font-family:var(--f-display);font-size:14.5px;font-weight:500;text-decoration:none;color:var(--muted);white-space:nowrap;padding:6px 0;border-bottom:1.5px solid transparent}
+.nav a:hover,.nav a[aria-current="true"]{color:var(--ink);border-bottom-color:var(--red)}
+
+/* section heads: a dimension line under each title */
+section{padding-block:clamp(56px,8vw,104px)}
+.shead{display:grid;gap:12px;margin-bottom:clamp(28px,4vw,44px);max-width:760px}
+.shead h2{font-size:clamp(30px,4vw,46px);font-stretch:85%;font-weight:600;letter-spacing:-.005em}
+.shead p{font-size:19px;color:var(--muted);max-width:62ch}
+.dim{height:12px;position:relative;margin-top:4px;max-width:220px}
+.dim::before{content:"";position:absolute;left:0;right:0;top:6px;height:1px;background:var(--ink)}
+.dim::after{content:"";position:absolute;inset:0;border-left:1px solid var(--ink);border-right:1px solid var(--ink)}
+.alt{background:var(--surface);border-block:1px solid var(--rule)}
+
+/* hero */
+.hero{padding-block:clamp(40px,7vw,96px) clamp(48px,7vw,88px)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.85fr);gap:clamp(28px,5vw,72px);align-items:center}
+.hero h1{font-size:clamp(50px,8vw,104px);font-stretch:68%;font-weight:700;line-height:.9;letter-spacing:-.01em;text-transform:uppercase}
+.hero .role{font-family:var(--f-display);font-stretch:118%;font-weight:400;font-size:clamp(14px,1.5vw,17px);letter-spacing:.38em;text-transform:uppercase;color:var(--muted);margin-top:18px}
+.hero .lede{font-size:clamp(19px,1.9vw,22px);line-height:1.55;font-weight:300;max-width:46ch;margin-top:28px}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--f-display);font-weight:600;font-size:14.5px;text-decoration:none;background:var(--ink);color:var(--bg);border:1.5px solid var(--ink);padding:11px 20px;cursor:pointer;border-radius:2px}
+.btn.ghost{background:transparent;color:var(--ink)}
+.portrait{margin:0;position:relative}
+.portrait .ph{aspect-ratio:4/5;overflow:hidden;border:1px solid var(--rule);background:var(--wash)}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.portrait figcaption{display:flex;justify-content:space-between;gap:12px;margin-top:10px;font-size:13.5px;color:var(--muted)}
+.portrait figcaption b{font-family:var(--f-display);font-weight:600;color:var(--ink);font-size:13px;letter-spacing:.04em}
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:clamp(40px,6vw,72px);border-top:1px solid var(--ink)}
+.facts>div{padding:16px 16px 0 0;min-width:0}
+.facts .n{font-family:var(--f-display);font-stretch:72%;font-weight:700;font-size:clamp(34px,4.4vw,52px);line-height:1;color:var(--ink);font-variant-numeric:tabular-nums}
+.facts .l{font-size:14.5px;color:var(--muted);margin-top:6px;line-height:1.35}
+
+/* work */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+.chip{font-family:var(--f-display);font-size:14px;font-weight:500;background:transparent;color:var(--ink);border:1px solid var(--rule);padding:6px 14px;cursor:pointer;border-radius:999px}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chip .c{font-family:var(--f-mono);font-size:11.5px;opacity:.7;margin-left:6px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(18px,2.4vw,30px)}
+.card{all:unset;box-sizing:border-box;display:flex;flex-direction:column;cursor:pointer;min-width:0}
+.card .im{aspect-ratio:4/3;overflow:hidden;background:var(--wash);border:1px solid var(--rule);position:relative}
+.card img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.card:hover img{transform:scale(1.03)}
+.card:focus-visible{outline:2px solid var(--red);outline-offset:4px}
+.card .badge{position:absolute;left:10px;top:10px;font-family:var(--f-display);font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;background:var(--bg);color:var(--ink);padding:3px 8px;border:1px solid var(--rule)}
+.card .badge.award{background:var(--red);color:var(--bg);border-color:var(--red)}
+.card .meta{padding-top:12px;display:grid;gap:3px}
+.card .ttl{font-family:var(--f-display);font-weight:600;font-size:19px;font-stretch:90%;color:var(--ink);line-height:1.25}
+.card .where{font-size:14.5px;color:var(--muted)}
+.card .rl{font-size:14.5px;color:var(--text)}
+.card .more{font-family:var(--f-display);font-size:13px;font-weight:600;color:var(--red);margin-top:4px}
+
+/* dialog */
+dialog{border:0;padding:0;max-width:min(1080px,calc(100vw - 24px));width:100%;max-height:calc(100dvh - 24px);background:var(--surface);color:var(--text);border-radius:4px;box-shadow:0 30px 80px rgba(0,0,0,.35)}
+dialog::backdrop{background:rgba(14,18,35,.62)}
+.dlg{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);max-height:calc(100dvh - 24px)}
+.dlg .gal{background:var(--wash);display:flex;flex-direction:column;min-width:0}
+.dlg .stage{flex:1;min-height:280px;display:flex;align-items:center;justify-content:center;background:#0d1120}
+.dlg .stage img{max-height:min(64vh,620px);width:100%;object-fit:contain}
+.dlg .cap{padding:10px 14px;font-size:13.5px;color:var(--muted);display:flex;justify-content:space-between;gap:10px;align-items:baseline;flex-wrap:wrap}
+.dlg .thumbs{display:flex;gap:8px;padding:0 14px 14px;flex-wrap:wrap}
+.dlg .thumbs button{all:unset;cursor:pointer;width:72px;height:54px;border:2px solid transparent;overflow:hidden}
+.dlg .thumbs button[aria-current="true"]{border-color:var(--red)}
+.dlg .thumbs img{width:100%;height:100%;object-fit:cover}
+.dlg .body{padding:clamp(20px,3vw,34px);overflow-y:auto;min-width:0;position:relative}
+.dlg h3{font-size:clamp(24px,2.6vw,32px);font-stretch:86%;margin:8px 0 6px;padding-right:40px}
+.dlg .where{font-size:15px;color:var(--muted)}
+.dlg .txt{margin-top:16px;font-size:17px}
+.close{position:absolute;right:14px;top:14px;width:36px;height:36px;border-radius:50%;border:1px solid var(--rule);background:var(--surface);color:var(--ink);font-size:20px;line-height:1;cursor:pointer}
+.spec{margin-top:18px;border-top:1px solid var(--ink)}
+.spec>div{display:grid;grid-template-columns:110px minmax(0,1fr);gap:12px;padding:7px 0;border-bottom:1px solid var(--rule);font-size:15px}
+.spec>div>span:first-child{font-family:var(--f-display);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding-top:3px}
+.verify{display:inline-block;border:1px solid var(--red);color:var(--red);border-radius:999px;padding:0 7px;font-family:var(--f-display);font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-style:normal}
+
+/* career */
+.journey{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-top:1px solid var(--ink);margin-bottom:clamp(40px,5vw,60px)}
+.journey>div{padding:16px 18px 0 0;min-width:0;position:relative}
+.journey>div::before{content:"";position:absolute;left:0;top:-5px;width:9px;height:9px;background:var(--bg);border:1.5px solid var(--ink);transform:rotate(45deg)}
+.journey .y{font-family:var(--f-mono);font-size:13px;color:var(--red)}
+.journey h4{font-size:19px;font-stretch:88%;margin:4px 0 6px}
+.journey p{font-size:15px;color:var(--muted);line-height:1.5}
+.career-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:clamp(28px,5vw,64px);align-items:start}
+.career-grid figure{margin:0}
+.career-grid figcaption{font-size:13.5px;color:var(--muted);margin-top:8px}
+.career-grid .ph{aspect-ratio:3/2;overflow:hidden;border:1px solid var(--rule)}
+.career-grid .ph img{width:100%;height:100%;object-fit:cover}
+.mile{display:grid;grid-template-columns:92px minmax(0,1fr);gap:16px;padding:14px 0;border-bottom:1px solid var(--rule)}
+.mile:first-child{border-top:1px solid var(--rule)}
+.mile .y{font-family:var(--f-display);font-stretch:75%;font-weight:700;font-size:20px;color:var(--ink);font-variant-numeric:tabular-nums}
+.mile h4{font-size:17.5px;font-stretch:92%}
+.mile p{font-size:15.5px;color:var(--muted);margin-top:2px}
+.record{margin-top:clamp(36px,5vw,56px);border:1px solid var(--rule);background:var(--surface)}
+.record>summary{list-style:none;cursor:pointer;padding:16px 20px;display:flex;justify-content:space-between;gap:12px;align-items:center;font-family:var(--f-display);font-weight:600;color:var(--ink);font-size:17px}
+.record>summary::-webkit-details-marker{display:none}
+.record>summary .plus{font-size:22px;font-weight:400;transition:transform .2s}
+.record[open]>summary .plus{transform:rotate(45deg)}
+.record .in{padding:0 20px 20px}
+.rlist{display:grid;gap:0}
+.rrow{display:grid;grid-template-columns:96px minmax(0,1fr) minmax(0,.9fr) auto;gap:14px;padding:9px 0;border-top:1px solid var(--rule);font-size:15px;align-items:baseline}
+.rrow .yr{font-family:var(--f-mono);font-size:12.5px;color:var(--muted)}
+.rrow .nm{font-family:var(--f-display);font-weight:600;color:var(--ink);font-size:15px}
+.rrow .nm small{display:block;font-family:var(--f-body);font-weight:400;color:var(--muted);font-size:13.5px}
+.rrow .rl{color:var(--muted);font-size:14px}
+.rrow .tg{font-family:var(--f-display);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+
+/* approach */
+.ap-intro{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(28px,5vw,64px);align-items:start;margin-bottom:clamp(36px,5vw,56px)}
+.ap-intro p{font-size:19px;font-weight:300;max-width:58ch}
+.ap-intro p+p{margin-top:16px}
+.ap-intro figure{margin:0;border:1px solid var(--rule);background:var(--bg);padding:12px}
+.ap-intro svg{width:100%;height:auto;display:block}
+.ap-intro figcaption{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:13.5px;color:var(--muted);margin-top:8px}
+.lineage{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(18px,3vw,36px);margin-bottom:clamp(40px,5vw,60px)}
+.lineage>div{border-top:1px solid var(--ink);padding-top:14px}
+.lineage .y{font-family:var(--f-mono);font-size:12.5px;color:var(--red)}
+.lineage h4{font-size:19px;font-stretch:90%;margin:4px 0 6px}
+.lineage p{font-size:16px;color:var(--muted)}
+.principles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 clamp(28px,5vw,64px)}
+.pr{display:grid;grid-template-columns:40px minmax(0,1fr);gap:12px;padding:18px 0;border-top:1px solid var(--rule)}
+.pr .no{font-family:var(--f-display);font-stretch:75%;font-weight:700;font-size:22px;color:var(--red);line-height:1.2}
+.pr h4{font-size:18.5px;font-stretch:92%;margin-bottom:5px}
+.pr p{font-size:16.5px}
+.study{margin-top:clamp(40px,5vw,60px);border:1px solid var(--ink);display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);background:var(--bg)}
+.study-fig{padding:16px;border-right:1px solid var(--rule);min-width:0}
+.study-fig svg{width:100%;height:auto;display:block}
+.study-ctl{padding:22px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.study-ctl h4{font-size:21px;font-stretch:88%}
+.study-ctl p{font-size:15px;color:var(--muted);line-height:1.5}
+.ctl label{display:flex;justify-content:space-between;gap:8px;font-family:var(--f-display);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.ctl label output{font-family:var(--f-mono);letter-spacing:0;text-transform:none;color:var(--ink);font-size:13px}
+.ctl input[type=range]{width:100%;accent-color:var(--red)}
+.ctl select{width:100%;font:inherit;font-size:16px;padding:7px 8px;background:var(--surface);color:var(--ink);border:1px solid var(--rule);border-radius:2px}
+.readout{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--rule)}
+.readout>div{padding:10px 12px;min-width:0}
+.readout>div+div{border-left:1px solid var(--rule)}
+.readout .n{font-family:var(--f-display);font-stretch:72%;font-weight:700;font-size:34px;line-height:1;color:var(--ink);font-variant-numeric:tabular-nums}
+.readout .l{display:block;color:var(--muted);font-size:12.5px;margin-top:5px;line-height:1.3}
+
+
+.tabs{display:flex;gap:0;border-bottom:1px solid var(--rule);margin-bottom:18px;overflow-x:auto;scrollbar-width:none}
+.tabs button{all:unset;cursor:pointer;font-family:var(--f-display);font-weight:600;font-size:16px;color:var(--muted);padding:12px 22px 12px 0;margin-right:22px;border-bottom:2px solid transparent;white-space:nowrap;display:flex;gap:10px;align-items:baseline}
+.tabs button .tn{font-family:var(--f-mono);font-size:12px;font-weight:400;color:var(--red)}
+.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--ink)}
+.tabs button:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.ltoggles{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:10px;font-size:13px;color:var(--muted)}
+.legend i{display:inline-block;width:12px;height:12px;margin-right:6px;vertical-align:-1px;border:1px solid var(--rule)}
+
+/* commissions */
+.avail{display:inline-flex;align-items:center;gap:10px;font-family:var(--f-display);font-weight:600;font-size:14px;color:var(--red);border:1.5px solid var(--red);padding:6px 12px;border-radius:2px;margin-bottom:26px}
+.avail::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--red)}
+.offers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2vw,24px)}
+.offer{background:var(--surface);border:1px solid var(--rule);border-top:2px solid var(--ink);padding:22px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.offer .no{font-family:var(--f-mono);font-size:12.5px;color:var(--red)}
+.offer h3{font-size:20px;font-stretch:88%}
+.offer p{font-size:16px}
+.offer ul{margin:4px 0 0;padding-left:18px;font-size:14.5px;color:var(--muted)}
+.offer li{margin:3px 0}
+.fine{margin-top:22px;font-size:15px;color:var(--muted);max-width:80ch}
+
+/* contact */
+.contact{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.2fr);gap:clamp(28px,5vw,64px)}
+.contact .side p{font-size:18px;max-width:44ch}
+.contact .side p+p{margin-top:14px}
+.redline{color:var(--red);font-style:italic;font-size:15px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+form .full{grid-column:1/-1}
+form label{display:block;font-family:var(--f-display);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+form input,form select,form textarea{width:100%;font:inherit;font-size:16.5px;padding:10px 12px;background:var(--surface);color:var(--text);border:1px solid var(--rule);border-radius:2px}
+form textarea{min-height:120px;resize:vertical}
+.out{grid-column:1/-1;border:1px solid var(--red);padding:16px;font-size:15.5px;background:var(--surface)}
+.out pre{white-space:pre-wrap;font-family:var(--f-mono);font-size:13px;margin:10px 0;background:var(--bg);padding:12px;border:1px solid var(--rule)}
+
+footer{border-top:1px solid var(--rule);padding-block:40px 56px;font-size:14.5px;color:var(--muted)}
+.foot{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:clamp(24px,4vw,56px)}
+.foot h4{font-size:14px;letter-spacing:.12em;text-transform:uppercase;font-stretch:110%;margin-bottom:10px}
+.foot dl{display:grid;grid-template-columns:110px minmax(0,1fr);gap:6px 12px;margin:0}
+.foot dt{color:var(--ink);font-family:var(--f-display);font-weight:600;font-size:13px}
+.foot dd{margin:0}
+details.credits>summary{cursor:pointer;font-family:var(--f-display);font-weight:600;color:var(--ink)}
+.credits .list{margin-top:12px;columns:2;column-gap:32px;font-size:13.5px}
+.credits .list p{break-inside:avoid;margin-bottom:6px}
+
+@media (max-width:980px){
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .offers{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .journey{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:28px}
+  .dlg{grid-template-columns:1fr;overflow-y:auto}
+  .dlg .body{overflow:visible}
+  .dlg .stage img{max-height:48vh}
+}
+@media (max-width:760px){
+  body{font-size:17px}
+  .hero-grid,.career-grid,.ap-intro,.study,.contact,.foot{grid-template-columns:1fr}
+  .portrait{max-width:420px}
+  .facts{grid-template-columns:1fr 1fr;row-gap:20px}
+  .lineage,.principles{grid-template-columns:1fr}
+  .study-fig{border-right:0;border-bottom:1px solid var(--rule)}
+  .rrow{grid-template-columns:76px minmax(0,1fr)}
+  .rrow .rl,.rrow .tg{grid-column:2}
+  .mark span{display:none}
+}
+@media (max-width:560px){
+  .grid,.offers,form{grid-template-columns:1fr}
+  .journey{grid-template-columns:1fr 1fr}
+  .spec>div,.foot dl{grid-template-columns:1fr;gap:2px}
+  .credits .list{columns:1}
+  .top .wrap{height:auto;flex-direction:column;align-items:flex-start;gap:2px;padding-block:8px}
+  .nav{width:100%}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#top">Ashok Kumar Chadha<span>Architect</span></a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#career">Career</a>
+      <a href="#approach">Approach</a>
+      <a href="#commissions">Commissions</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero wrap" aria-labelledby="h-name">
+  <div class="hero-grid">
+    <div>
+      <span class="eyebrow">Architect and lighting specialist · B.Arch 1971</span>
+      <h1 id="h-name" style="margin-top:14px">Ashok Kumar<br>Chadha</h1>
+      <p class="lede">Trained in Le Corbusier’s Chandigarh and apprenticed in Delhi and Tehran, he then spent forty-four years in Kuwait managing the design of hospitals, universities, palaces, museums and an international airport terminal. Today he designs houses, their interiors and their lighting for a small number of clients, drawn by hand.</p>
+      <div class="cta">
+        <a class="btn" href="#work">See the work</a>
+        <a class="btn ghost" href="#commissions">Commission a house</a>
+      </div>
+    </div>
+    <figure class="portrait">
+      <div class="ph"><img src="img/portrait.jpg" alt="Portrait of Ashok Kumar Chadha, smiling, with grey hair, a white beard and rimless glasses."></div>
+      <figcaption><span>Now based in India</span></figcaption>
+    </figure>
+  </div>
+  <div class="facts" aria-label="Career in figures">
+    <div><div class="n">53</div><div class="l">years in practice</div></div>
+        <div><div class="n" id="f-count">60+</div><div class="l">projects on the record</div></div>
+    <div><div class="n">5</div><div class="l">countries, from Delhi to Lagos</div></div>
+    <div><div class="n">KD 1.3 bn</div><div class="l">largest project, Kuwait Airport Terminal 2</div></div>
+  </div>
+</section>
+
+<section id="work" class="alt" aria-labelledby="h-work">
+  <div class="wrap">
+    <div class="shead">
+      <span class="eyebrow">Selected work</span>
+      <h2 id="h-work">Fifteen projects across five decades</h2>
+      <div class="dim" aria-hidden="true"></div>
+      <p>Large buildings are made by teams. Each project says plainly who designed it and what his part was. Select a project to see more.</p>
+    </div>
+    <div class="filters" id="wfilters" role="group" aria-label="Filter projects"></div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<dialog id="dlg" aria-labelledby="d-title">
+  <div class="dlg">
+    <div class="gal">
+      <div class="stage"><img id="d-img" alt=""></div>
+      <div class="cap"><span id="d-cap"></span><span id="d-credit" style="font-family:var(--f-mono);font-size:12px"></span></div>
+      <div class="thumbs" id="d-thumbs"></div>
+    </div>
+    <div class="body">
+      <button class="close" id="d-close" aria-label="Close">×</button>
+      <span class="eyebrow" id="d-eyebrow"></span>
+      <h3 id="d-title"></h3>
+      <div class="where" id="d-where"></div>
+      <p class="txt" id="d-text"></p>
+      <div class="spec" id="d-spec"></div>
+    </div>
+  </div>
+</dialog>
+
+<section id="career" aria-labelledby="h-career">
+  <div class="wrap">
+    <div class="shead">
+      <span class="eyebrow">Career</span>
+      <h2 id="h-career">From Chandigarh to Kuwait, and back to India</h2>
+      <div class="dim" aria-hidden="true"></div>
+    </div>
+    <div class="career-grid">
+      <figure>
+        <div class="ph"><img src="img/cca.jpg" alt="Front facade of Chandigarh College of Architecture, with a painted mural panel and concrete screen wall."></div>
+        <figcaption>Chandigarh College of Architecture, where he trained. Photo: Sanyam Bahga, CC BY-SA 3.0.</figcaption>
+      </figure>
+      <div id="miles"></div>
+    </div>
+    <details class="record" id="record">
+      <summary><span>The full project record <span class="small" id="rec-n"></span></span><span class="plus" aria-hidden="true">+</span></summary>
+      <div class="in">
+        <div class="filters" id="rfilters" role="group" aria-label="Filter the record by building type" style="margin:4px 0 14px"></div>
+        <div class="rlist" id="rlist"></div>
+        <p class="small" style="margin-top:12px">Dates are the years of his involvement, which often precede completion. Values as stated on his CV.</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<section id="approach" class="alt" aria-labelledby="h-approach">
+  <div class="wrap">
+    <div class="shead">
+      <span class="eyebrow">Approach</span>
+      <h2 id="h-approach">How he designs</h2>
+      <div class="dim" aria-hidden="true"></div>
+      <p>Principles drawn from fifty years of practice, for the houses he designs today.</p>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Approach topics">
+      <button role="tab" id="tab-sus" aria-controls="pan-sus" aria-selected="true"><span class="tn">01</span>The sustainable house</button>
+      <button role="tab" id="tab-light" aria-controls="pan-light" aria-selected="false" tabindex="-1"><span class="tn">02</span>Light</button>
+      <button role="tab" id="tab-int" aria-controls="pan-int" aria-selected="false" tabindex="-1"><span class="tn">03</span>Interiors and the plan</button>
+    </div>
+
+    <div role="tabpanel" id="pan-sus" aria-labelledby="tab-sus">
+<div class="ap-intro">
+      <div>
+        <p>Before air conditioning was cheap, buildings in Chandigarh, Tehran and Kuwait kept people comfortable with orientation, shade, mass and moving air. Most of what is sold today as sustainable design is that old knowledge, measured more carefully.</p>
+        <p>A house is the best place to apply it. It is small enough for one architect to control every decision, and it will be lived in for fifty years. The first decisions on site do the most work, and they cost nothing.</p>
+              </div>
+      <figure>
+        <svg viewBox="0 0 520 370" role="img" aria-labelledby="cs-t">
+          <title id="cs-t">Section through a courtyard house: wind tower, shaded courtyard with tree and pool, deep overhangs, and summer and winter sun angles.</title>
+          <g fill="none" stroke="var(--ink)" stroke-width="1.4" stroke-linecap="square">
+            <line x1="10" y1="318" x2="510" y2="318" stroke-width="2"/>
+            <rect x="70" y="200" width="130" height="118"/>
+            <line x1="56" y1="200" x2="214" y2="200" stroke-width="2.2"/>
+            <rect x="92" y="118" width="40" height="82"/>
+            <line x1="92" y1="132" x2="132" y2="132"/>
+            <g stroke-width=".8"><line x1="98" y1="140" x2="98" y2="160"/><line x1="106" y1="140" x2="106" y2="160"/><line x1="114" y1="140" x2="114" y2="160"/><line x1="122" y1="140" x2="122" y2="160"/></g>
+            <rect x="320" y="160" width="140" height="158"/>
+            <line x1="320" y1="240" x2="460" y2="240"/>
+            <line x1="300" y1="160" x2="480" y2="160" stroke-width="2.2"/>
+            <line x1="460" y1="240" x2="492" y2="240" stroke-width="2.2"/>
+            <rect x="320" y="262" width="6" height="40" fill="var(--bg)"/>
+            <rect x="320" y="184" width="6" height="40" fill="var(--bg)"/>
+            <rect x="194" y="236" width="6" height="56" fill="var(--bg)"/>
+            <path d="M226 318 v-6 h72 v6" stroke-width="1"/>
+            <line x1="232" y1="315" x2="292" y2="315" stroke="var(--muted)" stroke-dasharray="3 3"/>
+            <line x1="262" y1="312" x2="262" y2="250"/>
+            <path d="M262 250 c-28 -2 -36 -34 -14 -44 c2 -22 30 -24 36 -6 c22 4 22 38 -4 46 z" stroke-width="1.1"/>
+            <g stroke="var(--muted)" stroke-width="1" stroke-dasharray="5 4"><path d="M112 104 v30 q0 40 30 70 q40 34 108 40"/><path d="M226 290 q50 -10 94 -6"/></g>
+            <path d="M107 110 l5 -8 l5 8" stroke="var(--muted)" stroke-width="1"/>
+          </g>
+          <g stroke="var(--red)" stroke-width="1" fill="none"><line x1="470" y1="34" x2="330" y2="268" stroke-dasharray="7 4"/><line x1="510" y1="148" x2="326" y2="282"/></g>
+          <g font-family="IBM Plex Mono, monospace" font-size="10" fill="var(--red)"><text x="400" y="30">SUMMER NOON 84°</text><text x="404" y="132">WINTER NOON 37°</text></g>
+          <g font-family="IBM Plex Mono, monospace" font-size="9.5" fill="var(--muted)"><text x="60" y="96">WIND TOWER</text><text x="236" y="346">SHADED COURT</text><text x="356" y="346">LIVING, FACING SOUTH</text><text x="86" y="346">SLEEPING</text></g>
+        </svg>
+        <figcaption><span>Fig. 1 · Courtyard house, section</span><span>Sun angles for Kuwait City, 29.4° N</span></figcaption>
+      </figure>
+    </div>
+    <div class="lineage">
+      <div><span class="y">To 1974 · Chandigarh</span><h4>Shade is architecture</h4><p>Le Corbusier’s brise-soleil and deep verandas taught a generation that a facade is a sun-control device first and a picture second.</p></div>
+      <div><span class="y">1975–79 · Tehran</span><h4>The courtyard and the wind tower</h4><p>At Mandala, Nader Ardalan was drawing on the Persian tradition he set out in <em>The Sense of Unity</em> (1973): the shaded court, the badgir, the garden as a cooling room.</p></div>
+      <div><span class="y">1980–2024 · Kuwait</span><h4>Design for 50 °C</h4><p>Four decades of summers above 45 °C make every square metre of west-facing glass an argument you will lose.</p></div>
+    </div>
+    <div class="principles" id="principles"></div>
+
+    <div class="study" aria-labelledby="study-h">
+      <div class="study-fig"><svg id="studySvg" viewBox="0 0 440 320" role="img" aria-label="Section through a south-facing window with an overhang, showing summer and winter noon sun."></svg></div>
+      <div class="study-ctl">
+        <div><span class="eyebrow">Try it</span><h4 id="study-h" style="margin-top:6px">Size an overhang for a south window</h4>
+          <p style="margin-top:6px">A well-sized overhang blocks the high summer sun and lets the low winter sun in. Pick a city and adjust the depth.</p></div>
+        <div class="ctl"><label for="city">Location</label>
+          <select id="city"><option value="29.4">Kuwait City, 29.4° N</option><option value="30.7">Chandigarh, 30.7° N</option><option value="28.6">New Delhi, 28.6° N</option><option value="35.7">Tehran, 35.7° N</option><option value="34.8">Hamadan, 34.8° N</option></select></div>
+        <div class="ctl"><label for="depth">Overhang depth <output id="depthO" for="depth">0.60 m</output></label><input id="depth" type="range" min="0" max="1.6" step="0.05" value="0.6"></div>
+        <div class="ctl"><label for="gap">Gap above window head <output id="gapO" for="gap">0.30 m</output></label><input id="gap" type="range" min="0" max="0.8" step="0.05" value="0.3"></div>
+        <div class="readout">
+          <div><div class="n" id="rS">0%</div><span class="l">of the window shaded at noon on 21 June</span></div>
+          <div><div class="n" id="rW">0%</div><span class="l">of the window in sun at noon on 21 December</span></div>
+        </div>
+        <p class="small" id="rNote" style="font-size:13px"></p>
+      </div>
+    </div>
+
+    </div>
+
+    <div role="tabpanel" id="pan-light" aria-labelledby="tab-light" hidden>
+      <div class="ap-intro">
+        <div>
+          <p>Lighting has run through his whole career, from the interiors of a Chandigarh cinema in the early 1970s to Villa Moda, where he designed the lighting of every public area, the shop interiors and the building’s exterior.</p>
+          <p>His view is simple: light is a building material. It should be designed with the plan and the section, not chosen from a catalogue once the ceiling is finished. Daylight comes first, and electric light is arranged in layers so each room can change with the hour.</p>
+        </div>
+        <figure>
+          <svg id="lightSvg" viewBox="0 0 520 330" role="img" aria-labelledby="lt-t"><title id="lt-t">Section through a living room showing daylight, ambient cove light, a pendant over the table, and an accent light on a painting.</title></svg>
+          <div class="ltoggles" role="group" aria-label="Lighting layers">
+            <button type="button" class="chip" data-l="day" aria-pressed="false">Daylight</button>
+            <button type="button" class="chip" data-l="amb" aria-pressed="true">Ambient</button>
+            <button type="button" class="chip" data-l="task" aria-pressed="true">Task</button>
+            <button type="button" class="chip" data-l="acc" aria-pressed="true">Accent</button>
+          </div>
+          <div class="ctl" style="margin-top:12px"><label for="cct">Colour temperature <output id="cctO" for="cct">2700 K</output></label><input id="cct" type="range" min="2700" max="4000" step="100" value="2700"></div>
+          <figcaption><span>Fig. 2 · Layers of light, living room section</span><span id="ltNote">Evening</span></figcaption>
+        </figure>
+      </div>
+      <div class="principles" id="lprinciples"></div>
+    </div>
+
+    <div role="tabpanel" id="pan-int" aria-labelledby="tab-int" hidden>
+      <div class="ap-intro">
+        <div>
+          <p>He has designed interiors at every scale: a cinema, an auditorium, open-plan headquarters with their signage and furniture, and the coordination of ten fashion houses’ boutiques inside one building.</p>
+          <p>In a house, the plan is where comfort is won or lost. Rooms should follow how the day is lived, move from public to private in a clear order, and borrow views and light from each other. Floors, joinery and storage are designed with the walls, not added afterwards.</p>
+        </div>
+        <figure>
+          <svg id="planSvg" viewBox="0 0 500 360" role="img" aria-labelledby="pl-t"><title id="pl-t">Plan of a courtyard house showing zones from public to private, the route through the house, and long views.</title></svg>
+          <div class="ltoggles" role="group" aria-label="Plan overlays">
+            <button type="button" class="chip" data-o="zones" aria-pressed="true">Zones</button>
+            <button type="button" class="chip" data-o="route" aria-pressed="false">Route</button>
+            <button type="button" class="chip" data-o="views" aria-pressed="false">Views</button>
+          </div>
+          <div class="legend" id="planLegend"></div>
+          <figcaption><span>Fig. 3 · Courtyard house, plan</span><span>About 15 × 10 m</span></figcaption>
+        </figure>
+      </div>
+      <div class="principles" id="iprinciples"></div>
+    </div>
+  </div>
+</section>
+
+<section id="commissions" aria-labelledby="h-comm">
+  <div class="wrap">
+    <div class="shead">
+      <span class="eyebrow">Commissions</span>
+      <h2 id="h-comm">Six ways to work with him</h2>
+      <div class="dim" aria-hidden="true"></div>
+      <p>Each is a fixed scope with a clear deliverable.</p>
+    </div>
+    <div class="avail">Now accepting commissions</div>
+    <div class="offers">
+      <div class="offer"><span class="no">01</span><h3>Concept design for a new house</h3><p>From a site visit and brief to a complete concept you can take to a builder or local architect.</p>
+        <ul><li>Site and climate analysis</li><li>Plans, sections and elevations at 1:100</li><li>Hand-drawn perspective</li><li>Passive design strategy</li></ul></div>
+      <div class="offer"><span class="no">02</span><h3>Renovation feasibility study</h3><p>Before you spend on an existing house: what can change, what it will involve, and what to keep.</p>
+        <ul><li>Condition survey and measured sketches</li><li>Two or three options in sketch plan</li><li>Approvals and sequencing notes</li></ul></div>
+      <div class="offer"><span class="no">03</span><h3>Design review</h3><p>A second opinion on drawings you already have, from someone who has managed design on projects of every size.</p>
+        <ul><li>Drawings marked up in red pencil</li><li>Written review of plan, climate and buildability</li><li>One follow-up conversation</li></ul></div>
+      <div class="offer"><span class="no">04</span><h3>Passive cooling review</h3><p>For a house that is too hot: orientation, shade, ventilation and mass, before you add more equipment.</p>
+        <ul><li>Sun-path and shading study</li><li>Prioritized list of changes</li><li>Sketch details for shading and screens</li></ul></div>
+      <div class="offer"><span class="no">05</span><h3>Lighting design for a home</h3><p>A complete lighting scheme, layered room by room, for a new house or one you are renovating.</p>
+        <ul><li>Daylight review of windows and rooflights</li><li>Lighting plans with ambient, task and accent layers</li><li>Fitting and lamp schedule, with colour temperatures</li><li>Facade and garden lighting</li></ul></div>
+      <div class="offer"><span class="no">06</span><h3>Interior design and layout</h3><p>Plans that follow how you live, with floors, joinery and furniture designed together.</p>
+        <ul><li>Furnished layouts at 1:50</li><li>Floor finishes and material palette</li><li>Built-in storage and joinery drawings</li></ul></div>
+    </div>
+    <p class="fine">Where sealed construction drawings or site supervision are required, he works alongside a locally registered architect of record.</p>
+  </div>
+</section>
+
+<section id="contact" class="alt" aria-labelledby="h-contact">
+  <div class="wrap contact">
+    <div class="side">
+      <span class="eyebrow">Contact</span>
+      <h2 id="h-contact" style="font-size:clamp(30px,4vw,46px);font-stretch:85%;margin:12px 0 18px">Tell him about your site</h2>
+      <p>Describe the site, who will live there and what you hope the house will feel like. He reads every enquiry himself, and the next step is usually a conversation and a site visit.</p>
+    </div>
+    <form id="enqForm" name="enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+      <input type="hidden" name="form-name" value="enquiry">
+      <p hidden><label>Leave this empty <input name="bot-field"></label></p>
+      <div><label for="e-name">Your name</label><input id="e-name" name="name" autocomplete="name" required></div>
+      <div><label for="e-email">Email</label><input id="e-email" name="email" type="email" autocomplete="email" required></div>
+      <div><label for="e-phone">Phone (optional)</label><input id="e-phone" name="phone" type="tel" autocomplete="tel"></div>
+      <div><label for="e-where">Site location</label><input id="e-where" name="where" placeholder="City, state"></div>
+      <div><label for="e-scope">Scope</label><select id="e-scope" name="scope"><option>Concept design for a new house</option><option>Renovation feasibility study</option><option>Design review</option><option>Passive cooling review</option><option>Lighting design for a home</option><option>Interior design and layout</option><option>Something else</option></select></div>
+      <div><label for="e-when">Timing</label><select id="e-when" name="when"><option>Within 6 months</option><option>6 to 12 months</option><option>Exploring for now</option></select></div>
+      <div class="full"><label for="e-brief">About the project</label><textarea id="e-brief" name="brief" placeholder="Plot size, household, budget range, anything you love or dislike about houses you know."></textarea></div>
+      <div class="full"><button class="btn" type="submit" id="e-send">Send enquiry</button></div>
+      <div class="out" id="enqOut" hidden></div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <h4>Credentials</h4>
+      <dl>
+        <dt>Education</dt><dd>Bachelor of Architecture, 1971, Chandigarh College of Architecture, Panjab University</dd>
+        <dt>Registration</dt><dd>Council of Architects, India, 1974</dd>
+        <dt>Memberships</dt><dd>Associate, Indian Institute of Architects, 1971; Kuwait Society of Engineers, 1986</dd>
+      </dl>
+    </div>
+    <div>
+      <h4>Image credits</h4>
+      <details class="credits"><summary>Show all photograph and drawing credits</summary><div class="list" id="credits"></div></details>
+      <p style="margin-top:22px">© 2026 Ashok Kumar Chadha</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+const GC="https://www.gckuwait.com/portfolio_page/";
+const PROJECTS=[
+{id:"t2",region:"Kuwait",title:"Kuwait International Airport, Terminal 2",where:"Kuwait · 2011 onward · Gulf Consult with Foster + Partners",badge:"Under construction",
+ role:"Design Manager",
+ text:"Norman Foster’s practice designed the terminal in partnership with Gulf Consult. A single concrete roof shades the whole building and is designed to collect solar energy, as part of a target of LEED Gold. He managed the technical design through schematic design, design development, final design and tender documents. He then managed design for the second package of service buildings, access roads and car parks, and supported the site from head office.",
+ spec:[["Role","Design Manager (2011–14; Package 2, 2016–20); head office support from 2017"],["Design","Foster + Partners (London) in partnership with Gulf Consult"],["Scale","130,000 m² terminal; 13 million passengers a year"],["Value","KD 1.3 billion"]],
+ imgs:[["t21","Aerial view of the three-armed terminal","Rendering: Foster + Partners, via Gulf Consult",GC+"kuwait-international-airport-passenger-terminal"],["t26","The terminal at night","Rendering: Foster + Partners, via Gulf Consult",GC+"kuwait-international-airport-passenger-terminal"],["t216","The departures hall, lit through the roof","Rendering: Foster + Partners, via Gulf Consult",GC+"kuwait-international-airport-passenger-terminal"]]},
+{id:"cos",region:"Kuwait",award:1,title:"College of Science and Faculty Club, Kuwait University",where:"Sabah Al Salem University City · 2007–11 · Gulf Consult with NBBJ",badge:"Award winner",
+ role:"Project Manager",
+ text:"The largest building in the new university city, for more than 6,000 students and 1,300 staff. A perforated screen wraps the building and a deep colonnade shades every approach, so the facade works as a climate device. Completed in 2021, it received The International Architecture Award for 2023 from The Chicago Athenaeum and the European Centre for Architecture Art Design and Urban Studies.",
+ spec:[["Role","Project Manager, concept to tender, with client and authority liaison"],["Design","NBBJ (USA) in joint venture with Gulf Consult"],["Scale","375,522 m² gross area"],["Value","KD 180 million"],["Awards","The International Architecture Award, 2023; MEED Projects Awards, national winner, 2022"]],
+ imgs:[["cos4","The college from the south","Photo: Gulf Consult",GC+"kuwait-university-college-of-science"],["cos6","The shaded colonnade under the screen wall","Photo: Gulf Consult",GC+"kuwait-university-college-of-science"],["cos1","The main front at dusk","Photo: Gulf Consult",GC+"kuwait-university-college-of-science"],["cos8","A courtyard between the wings","Photo: Gulf Consult",GC+"kuwait-university-college-of-science"]]},
+{id:"tsc",region:"Kuwait",title:"The Scientific Center Expansion",where:"Salmiya · 2013–15 · Gulf Consult with Cambridge Seven Associates",
+ role:"Project Manager",
+ text:"A long relationship with one building. In 1998 he managed the animal holding facility at KISR, where creatures acclimatized before moving to the Center’s exhibits. Fifteen years later he led the design of its expansion, with a dolphinarium, a discovery centre and a conference centre, in joint venture with the Center’s original architects.",
+ spec:[["Role","Project Manager, total management through design"],["Design","Cambridge Seven Associates (Boston) with Gulf Consult"],["Value","KD 35 million"]],
+ imgs:[["tscx1","The expansion on the seafront","Rendering: Gulf Consult",GC+"the-scientific-center-of-kuwait-expansion-program/"],["tsc2","The original Center and dhow harbour, opened 2000","Photo: Gulf Consult",GC+"the-scientific-center"],["tsc9","The Center’s entrance","Photo: Gulf Consult",GC+"the-scientific-center"]]},
+{id:"vm",region:"Kuwait",title:"Villa Moda",where:"Shuwaikh · 2001–02 · Gulf Consult",badge:"Demolished",
+ role:"Project Manager and lighting designer",
+ text:"A glass department store for ten of the world’s leading fashion houses, with multi-brand floors, a restaurant, an art gallery and offices. Its 9,500 m² were designed and built on a fast-track design-build basis in 14 months. He managed it from concept to completion, designed the lighting of the public areas, coordinated the interior designers of every fashion house, and supervised the site daily. The store opened in 2003 and has since been demolished.",
+ spec:[["Role","Project Manager, concept to execution; lighting design of public areas and exterior"],["Design","Exterior by Pierfrancesco Cravel; interiors by Eldridge Smerin"],["Value","KD 7 million"]],
+ imgs:[["vm0","Villa Moda at dusk","Photo via 248am.com","https://248am.com/mark/design/architecture-highlight-villa-moda/"],["vm2","The café on the upper floor","Photo via 248am.com","https://248am.com/mark/design/architecture-highlight-villa-moda/"],["vm4","The site after demolition","Photo via 248am.com","https://248am.com/mark/design/architecture-highlight-villa-moda/"]]},
+{id:"seef",region:"Kuwait",award:1,title:"Al Seef Hospital",where:"Salmiya · 2002–08 · Gulf Consult with Langdon Wilson",badge:"Award winner",
+ role:"Project Manager",
+ text:"Planned as the Al Maidan Hospital, a private hospital and multi-storey car park facing the sea. He managed it from concept design to tender documents. Completed in 2010, it won Best Physical Environment at the Hospital Build Middle East awards in 2011.",
+ spec:[["Role","Project Manager, concept to tender, with client and authority liaison"],["Design","Langdon Wilson International (USA) with Gulf Consult"],["Value","KD 18 million"]],
+ imgs:[["seef7","The hospital tower","Photo: Gulf Consult",GC+"al-seef-hospital/"],["seef21","The atrium","Photo: Gulf Consult",GC+"al-seef-hospital/"]]},
+{id:"police",region:"Kuwait",title:"Police College",where:"Kuwait · 1998–99 · Gulf Consult with SOM",
+ role:"Project Coordination",
+ text:"A campus on a 300,000 m² site, with academic buildings, dormitories for 1,200 cadets and extensive training grounds. He coordinated the project from preliminary design to design development, working between the client, Skidmore, Owings and Merrill and Gulf Consult. The campus was completed in 2016.",
+ spec:[["Role","Project Coordination, preliminary design to design development"],["Design","SOM (USA) in joint venture with Gulf Consult"],["Value","KD 46 million"]],
+ imgs:[["police3","A timber-clad covered walkway","Photo: Gulf Consult",GC+"police-college-kuwait/"],["police2","The cantilevered entrance roof","Photo: Gulf Consult",GC+"police-college-kuwait/"]]},
+{id:"seif",region:"Kuwait",title:"Seif Palace repair and renovation",where:"Kuwait City · 1995–96 · Gulf Consult",
+ role:"Project Manager",
+ text:"The seat of the Emir came out of the 1990–91 occupation burned and broken, its Ceremonial Hall gutted. The work began with a structural damage assessment of each war-damaged building, then major repairs and renovation, and the complete design of two new buildings for the central plant, substation and water tanks.",
+ spec:[["Role","Project Manager, preliminary design to tender documents"],["Value","KD 3.6 million"]],
+ imgs:[["sief1","The restored palace and clock tower","Photo: Gulf Consult",GC+"sief-palace-restoration"],["seif91","The palace in March 1991, weeks after liberation","Photo: J. Jordan, US Army Corps of Engineers, public domain","https://commons.wikimedia.org/wiki/File:Kuwait_DS_palace_of_Seif_-_USACE-p15141coll5-10622.jpeg"],["sief0","The palace from the waterfront","Photo: Gulf Consult",GC+"sief-palace-restoration"]]},
+{id:"amiri",region:"Kuwait",title:"Amiri Diwan",where:"Kuwait City · 1987–90 · Archicenter",
+ role:"Senior Architect",
+ text:"The extension of the Amiri Diwan at the Seif Palace complex began in 1987. He carried overall responsibility for the design, technical development and coordination of every external facade detail across all of its buildings, through to final design and tender documents, and coordinated the West End buildings.",
+ spec:[["Role","Senior Architect; Project Architect and Technical Coordinator"],["Value","KD 80 million"]],
+ imgs:[["w_amiri0","The new buildings nearing completion","Photo via Al Alamiah","https://www.alamiahco.net/clients/government-clients/amiri-diwan/"],["w_amiri3","Facade detail: screens, arches and colonnades","Photo via Al Alamiah","https://www.alamiahco.net/prefab-factories/project/jh/"]]},
+{id:"crsk",region:"Kuwait",title:"Center for Research and Studies on Kuwait",where:"Sharq, Kuwait City · 2004–06 · Gulf Consult",
+ role:"Project Manager",
+ text:"A headquarters for the national research centre on a tight site in Sharq. Its massing and stone-and-glass character were designed to express Kuwait’s pride in its history. He managed the project from concept design through development, final design and tender documents, including liaison with the client, sub-consultants and approving authorities. The building was completed in 2015.",
+ spec:[["Role","Project Manager, concept to tender"],["Design","Arab Engineers in association with Gulf Consult"],["Value","KD 4.5 million"]],
+ imgs:[["crsk1","The headquarters tower","Photo: Gulf Consult",GC+"center-for-research-and-studies-on-kuwait/"]]},
+{id:"kidney",region:"Kuwait",title:"Kidney Center",where:"Kuwait · 1980–86 · Kuwaiti Engineers Office",
+ role:"Project Architect",
+ text:"A 60-bed hospital for organ transplantation, built for the Ministry of Public Health. As project architect he coordinated every discipline and sub-consultant from preliminary design through working drawings and tender documents, and handled liaison with the ministry, Kuwait Municipality and other agencies.",
+ spec:[["Role","Project Architect, technical coordination of all disciplines"],["Client","Ministry of Public Health"],["Value","KD 2.5 million"]],
+ imgs:[["w_kidneyAR1","The Organ Transplant Centre, Sabah Medical Area","Photo via Altibbi","https://altibbi.com/"]]},
+{id:"basu",region:"Iran",title:"Bu Ali Sina University",where:"Hamadan, Iran · 1976–79 · The Mandala Collaborative",
+ role:"Senior Architect",
+ text:"A new university founded under a 1973 Iran–France agreement. Working under Nader Ardalan with the Paris architect Georges Candilis, he took part in the evolution of the master plan and in the design development and detailing of the academic block. He then ran the university’s sports complex as project architect and manager.",
+ spec:[["Role","Senior Architect (1976–77); Project Architect and Manager, Sports Complex (1978–79)"],["Design","Nader Ardalan, The Mandala Collaborative, with Georges Candilis"]],
+ imgs:[["w_basu0","Academic buildings, Hamadan","Photo via architecture-history.org","https://architecture-history.org/architects/architects/ARDALAN/COUNTRY/1970.html"],["w_basu1","The campus among its trees","Photo via architecture-history.org","https://architecture-history.org/architects/architects/ARDALAN/COUNTRY/1970.html"]]},
+{id:"tcm",region:"Iran",title:"Tehran Centre for the Celebration of Music",where:"Tehran · 1975–76 · The Mandala Collaborative",badge:"Unbuilt",
+ role:"Senior Architect",
+ text:"Commissioned in 1974 as a home for the Tehran Symphony Orchestra: a 2,000-seat concert hall, an experimental music hall and a conservatory set in a Persian garden, with Herbert von Karajan as a consultant. He worked on the preliminary design under Nader Ardalan. The 1979 revolution stopped the project before construction.",
+ spec:[["Role","Senior Architect, preliminary design"],["Design","Nader Ardalan, The Mandala Collaborative"]],
+ imgs:[["w_tcm5","Section through the concert hall","Drawing: Ardalan Associates","https://www.ardalanassociates.com/tehran-center-for-celebration-of-music.html"],["w_tcm0","The design model","Model photo via Pinterest","https://www.pinterest.com/pin/1123929650727003538/"],["w_tcm1","Long section through the gardens and halls","Drawing: Ardalan Associates","https://www.ardalanassociates.com/tehran-center-for-celebration-of-music.html"]]},
+{id:"asia",region:"India",title:"Ministry of Education Pavilion, Asia ’72",where:"Pragati Maidan, New Delhi · 1972 · Kothari and Associates",
+ role:"Designer",
+ text:"Asia ’72, the Third Asian International Trade Fair, opened in November 1972 to mark twenty-five years of independence. Its centrepiece was Raj Rewal’s Hall of Nations. As a young architect at Kothari and Associates he designed the Ministry of Education pavilion and drew its working drawings.",
+ spec:[["Role","Design and working drawings"],["Firm","Kothari and Associates, New Delhi"]],
+ imgs:[["w_asia720","The Hall of Nations, 1972","Photo via Hindustan Times","https://www.hindustantimes.com/photos/india-news/in-pictures-pragati-maidan-in-the-process-of-a-historic-facelift/photo-2Op1RTgsLa8IohhME20FrL.html"],["w_asia721","Pavilions at the fair, 1972","Photo via Hindustan Times","https://www.hindustantimes.com/photos/india-news/in-pictures-pragati-maidan-in-the-process-of-a-historic-facelift/photo-2Op1RTgsLa8IohhME20FrL.html"]]},
+{id:"hans",region:"India",title:"Hansalaya",where:"Barakhamba Road, New Delhi · 1971–74 · Kothari and Associates",
+ role:"Project Architect",
+ text:"An office and hotel tower in Connaught Place, home to the Hans Hotel. As project architect he took it through design development and working drawings, with periodic site supervision.",
+ spec:[["Role","Project Architect; design development, working drawings, site supervision"],["Firm","Kothari and Associates, New Delhi"],["Height","About 88 m"]],
+ imgs:[["w_hans2","Hansalaya from Barakhamba Road","Photo via myHQ","https://myhq.in/office-space-for-rent/hansalaya-building-connaughtplace"],["w_hans0","The tower’s sun-shaded facades","Photo via Cityinfo Services","https://properties.cityinfoservices.com/hansalaya-building-connaught-place-delhi/s9j56jd/pjd"]]},
+{id:"kv",region:"India",title:"Kailash and Vandana office towers",where:"New Delhi · 1971–74 · Kothari and Associates",
+ role:"Project Architect",
+ text:"Two office towers in central New Delhi, on Kasturba Gandhi Marg and Tolstoy Marg. He was responsible for their detailing and periodic site supervision.",
+ spec:[["Role","Detailing and periodic site supervision"],["Firm","Kothari and Associates, New Delhi"]],
+ imgs:[["w_kailash0","Kailash Building, Kasturba Gandhi Marg","Photo via Cityinfo Services","https://properties.cityinfoservices.com/kailash-building-kasturba-gandhi-marg-delhi/k3cua7a/pjd"],["w_vandana6","Vandana Building, Tolstoy Marg","Photo via Cityinfo Services","https://properties.cityinfoservices.com/vandana-building-connaught-place-delhi/oii96xp/pjd"]]}
+];
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const src=k=>"img/"+k+".jpg";
+
+// work grid
+const grid=document.getElementById('grid'),wf=document.getElementById('wfilters');
+let wsel="All";
+const wopts=[["All",PROJECTS.length],["Kuwait",PROJECTS.filter(p=>p.region==="Kuwait").length],["Iran",PROJECTS.filter(p=>p.region==="Iran").length],["India",PROJECTS.filter(p=>p.region==="India").length],["Award winners",PROJECTS.filter(p=>p.award).length]];
+wopts.forEach(([k,n])=>{const b=document.createElement('button');b.type='button';b.className='chip';b.setAttribute('aria-pressed',k===wsel);b.innerHTML=esc(k)+'<span class="c">'+n+'</span>';b.onclick=()=>{wsel=k;wf.querySelectorAll('.chip').forEach(c=>c.setAttribute('aria-pressed',c===b));drawGrid()};wf.appendChild(b)});
+function drawGrid(){
+  grid.innerHTML="";
+  PROJECTS.filter(p=>wsel==="All"||(wsel==="Award winners"?p.award:p.region===wsel)).forEach(p=>{
+    const b=document.createElement('button');b.type='button';b.className='card';b.setAttribute('aria-haspopup','dialog');
+    b.innerHTML='<div class="im"><img src="'+src(p.imgs[0][0])+'" alt="" loading="lazy">'+(p.badge?'<span class="badge'+(p.award?' award':'')+'">'+esc(p.badge)+'</span>':'')+'</div><div class="meta"><span class="ttl">'+esc(p.title)+'</span><span class="where">'+esc(p.where)+'</span><span class="rl">'+esc(p.role)+'</span><span class="more">View project →</span></div>';
+    b.onclick=()=>openP(p,b);grid.appendChild(b);
+  });
+}
+drawGrid();
+
+// dialog
+const dlg=document.getElementById('dlg');let cur=null,idx=0,opener=null;
+function showImg(i){idx=i;const im=cur.imgs[i];const el=document.getElementById('d-img');el.src=src(im[0]);el.alt=im[1];document.getElementById('d-cap').textContent=im[1];document.getElementById('d-credit').textContent=im[2];document.querySelectorAll('#d-thumbs button').forEach((t,j)=>t.setAttribute('aria-current',j===i))}
+function openP(p,from){cur=p;opener=from;
+  document.getElementById('d-eyebrow').textContent=p.region+(p.badge?' · '+p.badge:'');
+  document.getElementById('d-title').textContent=p.title;
+  document.getElementById('d-where').textContent=p.where;
+  document.getElementById('d-text').textContent=p.text;
+  document.getElementById('d-spec').innerHTML=p.spec.map(s=>'<div><span>'+esc(s[0])+'</span><span>'+esc(s[1])+'</span></div>').join('');
+  const th=document.getElementById('d-thumbs');th.innerHTML=p.imgs.length>1?p.imgs.map((im,i)=>'<button type="button" aria-label="Show image '+(i+1)+': '+esc(im[1])+'"><img src="'+src(im[0])+'" alt=""></button>').join(''):'';
+  th.querySelectorAll('button').forEach((b,i)=>b.onclick=()=>showImg(i));
+  showImg(0);
+  if(dlg.showModal)dlg.showModal();else dlg.setAttribute('open','');
+}
+document.getElementById('d-close').onclick=()=>dlg.close();
+dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close()});
+dlg.addEventListener('keydown',e=>{if(!cur||cur.imgs.length<2)return;if(e.key==='ArrowRight')showImg((idx+1)%cur.imgs.length);if(e.key==='ArrowLeft')showImg((idx-1+cur.imgs.length)%cur.imgs.length)});
+dlg.addEventListener('close',()=>{if(opener)opener.focus()});
+
+// journey + milestones
+
+const M=[["1971","Bachelor of Architecture, Chandigarh","Trains at the school founded within Le Corbusier’s new capital."],
+["1971","Kothari and Associates, New Delhi","Project architect on Hansalaya, the Food Corporation of India building and a first-prize competition entry for a headquarters in Bhopal. Designs the Ministry of Education pavilion at Asia ’72."],
+["1975","The Mandala Collaborative, Tehran","Senior architect under Nader Ardalan on Bu Ali Sina University, with Georges Candilis, and the Tehran Centre for the Celebration of Music."],
+["1980","Kuwaiti Engineers Office","Project architect on the Kidney Center and towers in Salmiya and Fintas."],
+["1987","Archicenter","Leads the facade design and coordination of the Amiri Diwan."],
+["1990","Gulf Consult","Three decades as project and design manager, from the post-war restoration of Seif Palace to Villa Moda, Al Seef Hospital, Kuwait University’s College of Science and Terminal 2 with Foster + Partners."]];
+document.getElementById('miles').innerHTML=M.map(m=>'<div class="mile"><span class="y">'+m[0]+'</span><div><h4>'+esc(m[1])+'</h4><p>'+esc(m[2])+'</p></div></div>').join('');
+
+// full record
+const T={H:"Healthcare",E:"Education",C:"Civic & cultural",A:"Aviation & infrastructure",W:"Commercial & workplace",R:"Residential & hospitality",P:"Planning & industry"};
+const D=[
+ [1971,1974,"Piccadilly Cinema","Chandigarh","C","Consulting Architect; interior design and supervision","Self-employed","","",0,"in1"],
+ [1971,1974,"Five residential villas","Chandigarh region","R","Consulting Architect; design and supervision","Self-employed","","",0,"in1"],
+ [1971,1974,"Hansalaya","23-storey office cum hotel building, New Delhi","W","Project Architect; design development, working drawings, periodic site supervision","Kothari and Associates","","",1,"in2"],
+ [1971,1974,"Food Corporation of India building","New Delhi","W","Project Architect; interior design and detailing of the auditorium","Kothari and Associates","","",0,"in2"],
+ [1971,1974,"Headquarters building, Bhopal","First prize, All India competition","W","Participated in design competition","Kothari and Associates","","",0,"in2"],
+ [1971,1974,"Vandana and Kailash office towers","New Delhi","W","Detailing and periodic site supervision","Kothari and Associates","","",0,"in2"],
+ [1971,1974,"Ruby Hotel, Agra; Kwality Hotel, Varanasi","Hotels","R","Design development and working drawings (Agra); preliminary design (Varanasi)","Kothari and Associates","","",0,"in2"],
+ [1971,1974,"Kanpur University","School of Basic Sciences, staff housing, guest house","E","Preliminary design and working drawings","Kothari and Associates","","",0,"in2"],
+ [1971,1974,"Computer Center, Delhi University","New Delhi","E","Detailing and site supervision","Kothari and Associates","","",0,"in2"],
+ [1972,1972,"Ministry of Education pavilion, Asia ’72","Pragati Maidan, New Delhi","C","Design and working drawings","Kothari and Associates","","",1,"in2"],
+ [1971,1974,"Cinema at Agra","Agra","C","Design and working drawings","Kothari and Associates","","",0,"in2"],
+ [1975,1976,"Tehran Centre for the Celebration of Music","Concert halls and conservatory, Tehran","C","Senior Architect; participated in preliminary design","The Mandala Collaborative","","Nader Ardalan, principal",1,"ir"],
+ [1975,1976,"Creative Arts Centre for Children","Tehran","C","Senior Architect; participated in final design and working drawings","The Mandala Collaborative","","",0,"ir"],
+ [1975,1976,"Vanak Park residential apartments","Multi-storey housing, Tehran","R","Senior Architect; final design and working drawings","The Mandala Collaborative","","",0,"ir"],
+ [1976,1977,"Bu Ali Sina University master plan and academic block","Hamadan","E","Senior Architect; master plan evolution, design development and detailing of the academic block","The Mandala Collaborative","","Georges Candilis, Paris",1,"ir"],
+ [1976,1977,"Iran America Society School","First prize, design competition, Tehran","E","Participated in competition design","The Mandala Collaborative","","",0,"ir"],
+ [1978,1979,"Bu Ali Sina University Sports Complex","Hamadan","E","Project Architect and Manager; design, management and coordination of all disciplines","The Mandala Collaborative","","",0,"ir"],
+ [1979,1980,"Siemens factory for switches and transformers","Lagos","P","Project Architect and Manager; preliminary design and client liaison","Archives, Lagos","","",0,"ng"],
+ [1980,1986,"URC Galleria","20-storey commercial and residential complex, Salmiya","W","Project Architect; technical coordination of all disciplines through tender","Kuwaiti Engineers Office","KD 12 million","",0,"kw1"],
+ [1980,1986,"Kuwait Markets Group office tower","20 storeys","W","Project Architect; technical coordination","Kuwaiti Engineers Office","KD 1.5 million","",0,"kw1"],
+ [1980,1986,"Azizan residential apartments","4-storey block","R","Project Architect; technical coordination","Kuwaiti Engineers Office","KD 1.5 million","",0,"kw1"],
+ [1980,1986,"Kidney Center","60-bed organ transplant hospital, Ministry of Public Health","H","Project Architect; technical coordination and authority liaison","Kuwaiti Engineers Office","KD 2.5 million","",0,"kw1"],
+ [1980,1986,"PIFSS Fintas residential towers","Fintas","R","Design development","Kuwaiti Engineers Office","KD 27 million","",0,"kw1"],
+ [1980,1986,"Al Mashreq commercial tower complex","20 storeys","W","Concept design","Kuwaiti Engineers Office","KD 28 million","",0,"kw1"],
+ [1980,1986,"Al Maadi Complex","40-storey residential and commercial, Cairo","R","Concept design","Kuwaiti Engineers Office","","",0,"kw1"],
+ [1980,1986,"Ministry of Defence master plan and EDMP headquarters","Kuwait","P","Data collection, research, programming and design brief","Kuwaiti Engineers Office","","",0,"kw1"],
+ [1980,1986,"Safwan International Trade Center","","W","Data collection, research, programming and design brief","Kuwaiti Engineers Office","","",0,"kw1"],
+ [1986,1987,"National Computer and Microfilm Centre","Kuwait","C","Project Architect and Assistant Project Manager; redesign and coordination through tender","Sami Al-Badr Architect","KD 12 million","",0,"kw1"],
+ [1987,1990,"Amiri Diwan","Seif Palace complex, Kuwait City","C","Senior Architect; design and coordination of all external facade details","Archicenter","KD 80 million","",1,"kw1"],
+ [1990,1990,"Integrated Borders Project","Master plan and terminals at all three international borders","A","Project Manager","Gulf Consult","","",0,"kw2"],
+ [1991,1991,"Toilet facilities, US Army base at Doha","Kuwait","W","Project Manager","Gulf Consult","","",0,"kw2"],
+ [1991,1992,"Kuwait Natural History and Science Museum","16,000 m² on a 9-hectare seafront site","C","Project Manager","Gulf Consult","KD 6 million","Cansult Limited and Acrop Associates, Canada",0,"kw2"],
+ [1991,1992,"Cold storage renovation, Shuwaikh Port","Refrigeration Industries","P","Project Manager","Gulf Consult","KD 0.6 million","",0,"kw2"],
+ [1991,2007,"BMB Group projects","War-damage renovation and new buildings, including the Clock Tower at Kuwait International Airport","W","Projects Manager; concept to site follow-up","Gulf Consult","KD 6.5 million","",0,"kw2"],
+ [1995,1996,"Seif Palace repair and renovation","Damage assessment, repairs and two new plant buildings","C","Project Manager","Gulf Consult","KD 3.6 million","",1,"kw2"],
+ [1997,1998,"KMC General Hospital","120 beds, six operating theatres","H","Project Manager","Gulf Consult","KD 7.5 million","",0,"kw2"],
+ [1998,1998,"Maternity and Gynaecological Hospital, Jahra","60 beds, concept design","H","Project Manager","Gulf Consult","KD 5 million","",0,"kw2"],
+ [1998,1999,"Dialysis unit, Jahra Hospital","30 beds","H","Project Manager","Gulf Consult","KD 0.1 million","",0,"kw2"],
+ [1998,1998,"IHS Hospital, Salmiya","120-bed general hospital, concept design","H","Project Manager","Gulf Consult","KD 7.5 million","",0,"kw2"],
+ [1998,1998,"Animal holding facility for The Scientific Center","KISR, Sulaibiya","C","Project Manager; concept to execution","Gulf Consult","","",0,"kw2"],
+ [1998,1998,"Kuwait International Airport car park","Design competition","A","Concept design","Gulf Consult","KD 15 million","Cambridge Seven Associates",0,"kw2"],
+ [1998,1999,"Police College","300,000 m² campus for 1,200 cadets, Ministry of Interior","E","Project Coordination; preliminary design to design development","Gulf Consult","KD 46 million","SOM",1,"kw2"],
+ [1998,1999,"Sabah Adult Psychiatric Hospital link tunnel","","H","Project Manager","Gulf Consult","KD 1.2 million","",0,"kw2"],
+ [2000,2001,"Integrated border stations, Nuwaiseeb and Salmi","Modular prototype master plan","A","Concept master plan and design of all buildings","Gulf Consult","KD 18 million","",0,"kw2"],
+ [2000,2002,"BMB/EG offices, showroom and headquarters","Shuwaikh","W","Project Manager; design, interiors, signage and site follow-up","Gulf Consult","KD 3.2 million","",0,"kw2"],
+ [2001,2002,"Villa Moda","9,500 m² fashion showroom, Kuwait Free Trade Zone, built in 14 months","W","Project Manager; concept to execution, lighting and coordination of every boutique","Gulf Consult","KD 7 million","",1,"kw2"],
+ [2002,2002,"BMB/EG office renovation","Open-plan offices and signage","W","Project Manager","Gulf Consult","KD 0.35 million","",0,"kw2"],
+ [2002,2003,"Khiran township water towers and substations","New Khiran master plan","P","Architectural design of repeated elements","Gulf Consult","KD 69 million (township)","",0,"kw2"],
+ [2002,2004,"Zain HQ1 extension","","W","Project Manager","Gulf Consult","KD 1.5 million","",0,"kw2"],
+ [2002,2008,"Al Seef Hospital (formerly Al Maidan)","Private hospital and multi-storey car park","H","Project Manager; concept to tender","Gulf Consult","KD 18 million","Langdon Wilson",1,"kw2"],
+ [2004,2006,"Center for Research and Studies on Kuwait","Headquarters building, Sharq","C","Project Manager; concept to tender","Gulf Consult","KD 4.5 million","",0,"kw2"],
+ [2005,2007,"BMB headquarters, Kuwait Free Zone","Including interiors and furniture","W","Project Manager","Gulf Consult","KD 4 million","",0,"kw2"],
+ [2007,2011,"College of Science and Faculty Club","Sabah Al Salem University City; The International Architecture Award, 2023","E","Project Manager; concept to tender, client and authority liaison","Gulf Consult","KD 180 million","NBBJ, USA",1,"kw3"],
+ [2011,2014,"Kuwait International Airport, Terminal 2","Schematic design to tender documents","A","Design Manager; technical design management and coordination","Gulf Consult","KD 1.3 billion","Foster + Partners",1,"kw3"],
+ [2013,2015,"The Scientific Center Expansion","Salmiya","C","Project Manager","Gulf Consult","KD 35 million","Cambridge Seven Associates",1,"kw3"],
+ [2016,2020,"Terminal 2, Package 2","Service buildings, access roads and car park","A","Design Manager","Gulf Consult","","Foster + Partners",0,"kw3"],
+ [2017,2022,"Mubarak Al Kabeer Port, Phase 1","Stages 3B and 3C, Boubyan Island","A","Project Coordinator","Gulf Consult","","",0,"kw3"],
+ [2017,null,"Terminal 2, head office support","Packages 1 and 2","A","Head office backup for site technical issues","Gulf Consult","","Foster + Partners",0,"kw3"],
+ [2019,2022,"Villa Moda renovation, Future Zone","For Boodai Corp","W","Project Manager","Gulf Consult","","",0,"kw3"],
+ [2019,2023,"NBK Children’s Hospital, Block A refurbishment","","H","Project Manager","Gulf Consult","","",0,"kw3"],
+ [2021,2022,"Mercedes-Benz flagship facilities","Al Rai and Shuwaikh","W","Project Advisor","Gulf Consult","","",0,"kw3"],
+ [2022,null,"NBK Children’s Hospital, Building C","","H","Project Manager","Gulf Consult","","",0,"kw3"],
+ [2023,null,"Pavilion commercial complex","Shuwaikh","W","Project Manager","Gulf Consult","","",0,"kw3"]
+];
+document.getElementById('f-count').textContent=D.length;
+document.getElementById('rec-n').textContent='('+D.length+' projects)';
+const yrs=e=>e[1]==null?e[0]+" onward":e[0]===e[1]?String(e[0]):e[0]+"–"+String(e[1]).slice(e[0]<2000&&e[1]>=2000?0:2);
+let rsel="all";const rf=document.getElementById('rfilters');
+[["all","All",D.length]].concat(Object.entries(T).map(([k,v])=>[k,v,D.filter(e=>e[4]===k).length])).forEach(([k,l,n])=>{const b=document.createElement('button');b.type='button';b.className='chip';b.setAttribute('aria-pressed',k===rsel);b.innerHTML=esc(l)+'<span class="c">'+n+'</span>';b.onclick=()=>{rsel=k;rf.querySelectorAll('.chip').forEach(c=>c.setAttribute('aria-pressed',c===b));drawRec()};rf.appendChild(b)});
+function drawRec(){document.getElementById('rlist').innerHTML=D.filter(e=>rsel==="all"||e[4]===rsel).map(e=>'<div class="rrow"><span class="yr">'+yrs(e)+'</span><span class="nm">'+esc(e[2])+(e[3]?'<small>'+esc(e[3])+'</small>':'')+'</span><span class="rl">'+esc(e[5])+(e[8]?'. With '+esc(e[8]):'')+(e[7]?'. '+esc(e[7]):'')+'</span><span class="tg">'+esc(e[6])+'</span></div>').join('')}
+drawRec();
+
+// principles
+const S=[
+ ["01 10 00","Orientation before equipment","Lay the long axis east to west. Put the main glazing on the north and south faces, and keep west glass to a minimum. No machine fixes a house that faces the wrong way."],
+ ["01 20 00","Shade the wall, not only the window","Overhangs work on south faces. East and west faces need vertical fins, screens or planting, because the sun arrives low and flat. A shaded wall never stores the heat you would otherwise pay to remove."],
+ ["01 30 00","The courtyard as a climate device","A court about as wide as it is tall shades itself for most of the day. Cool night air settles in it. A shallow pool and one good tree make it the most comfortable room in the house."],
+ ["01 40 00","Mass where nights are cool","Heavy walls of brick or stone absorb the day’s heat and give it back at night. Pair them with secure night ventilation. On humid coasts, where nights stay warm, build lighter and let the breeze through."],
+ ["01 50 00","Let the air move","Plan for cross-ventilation in every room: openings on opposite walls, and high outlets for warm air to escape. The wind tower is the same idea, made into architecture."],
+ ["01 60 00","Light without heat","Bring daylight from the north and from above, through clerestories and light shelves. Use jaali and mashrabiya screens for privacy and filtered light."],
+ ["01 70 00","Materials that age well","Choose local stone, brick, lime and timber that improve with weathering. Fewer applied finishes means less to replace and less to maintain."],
+ ["01 80 00","Build less, build well","A compact plan with rooms that serve more than one purpose. The most sustainable square metre is the one you never have to build, cool or clean."]
+];
+document.getElementById('principles').innerHTML=S.map((s,i)=>'<div class="pr"><span class="no">'+(i+1)+'</span><div><h4>'+esc(s[1])+'</h4><p>'+esc(s[2])+'</p></div></div>').join('');
+
+// shading study
+const svg=document.getElementById('studySvg'),city=document.getElementById('city'),depth=document.getElementById('depth'),gap=document.getElementById('gap');
+const H=1.8,DEC=23.44,SC=80;
+function study(){
+  const lat=+city.value,Dd=+depth.value,G=+gap.value;
+  const aS=Math.min(90-lat+DEC,89.9),aW=90-lat-DEC;
+  const sh=a=>Math.max(0,Math.min(H,Dd*Math.tan(a*Math.PI/180)-G))/H;
+  const fS=sh(aS),fW=1-sh(aW);
+  document.getElementById('depthO').textContent=Dd.toFixed(2)+' m';
+  document.getElementById('gapO').textContent=G.toFixed(2)+' m';
+  document.getElementById('rS').textContent=Math.round(fS*100)+'%';
+  document.getElementById('rW').textContent=Math.round(fW*100)+'%';
+  document.getElementById('rNote').textContent='Noon sun: '+aS.toFixed(1)+'° in June, '+aW.toFixed(1)+'° in December. East and west windows need vertical fins or screens instead.';
+  const wx=300,fy=290,sill=0.6,wb=fy-sill*SC,wt=wb-H*SC,oy=wt-G*SC,ox=wx+Dd*SC;
+  const ray=(a,len)=>{const r=a*Math.PI/180;return [ox+Math.cos(r)*len,oy-Math.sin(r)*len]};
+  const hit=a=>Math.min(oy+Dd*Math.tan(a*Math.PI/180)*SC,fy);
+  const sY=hit(aS),wY=hit(aW),rS=ray(aS,170),rW=ray(aW,210),f=x=>x.toFixed(1);
+  svg.innerHTML='<g fill="none" stroke="var(--ink)" stroke-width="1.4"><line x1="20" y1="'+fy+'" x2="430" y2="'+fy+'" stroke-width="2"/><rect x="'+(wx-22)+'" y="'+(oy-46)+'" width="22" height="'+(fy-oy+46)+'" fill="var(--wash)"/><rect x="'+(wx-22)+'" y="'+f(wt)+'" width="22" height="'+f(wb-wt)+'" fill="var(--surface)"/><line x1="'+(wx-11)+'" y1="'+f(wt)+'" x2="'+(wx-11)+'" y2="'+f(wb)+'"/><rect x="'+(wx-22)+'" y="'+f(oy-8)+'" width="'+f(Dd*SC+22)+'" height="8" fill="var(--ink)"/><line x1="'+(wx-22)+'" y1="'+(oy-46)+'" x2="40" y2="'+(oy-46)+'" stroke-width="2"/></g>'+
+  '<g stroke="var(--red)" stroke-width="1.2" fill="none"><line x1="'+f(rS[0])+'" y1="'+f(rS[1])+'" x2="'+f(ox)+'" y2="'+f(oy)+'"/><line x1="'+f(ox)+'" y1="'+f(oy)+'" x2="'+wx+'" y2="'+f(sY)+'" stroke-dasharray="4 3"/><line x1="'+f(rW[0])+'" y1="'+f(rW[1])+'" x2="'+f(ox)+'" y2="'+f(oy)+'"/><line x1="'+f(ox)+'" y1="'+f(oy)+'" x2="'+wx+'" y2="'+f(wY)+'" stroke-dasharray="4 3"/></g>'+
+  '<g font-family="IBM Plex Mono, monospace" font-size="10.5"><text x="'+f(Math.min(rS[0],360)-6)+'" y="'+f(Math.max(rS[1],14)+2)+'" fill="var(--red)" text-anchor="end">21 JUN '+aS.toFixed(0)+'°</text><text x="'+f(Math.min(rW[0],430))+'" y="'+f(Math.max(rW[1]-6,40))+'" fill="var(--red)" text-anchor="end">21 DEC '+aW.toFixed(0)+'°</text><text x="'+(wx-30)+'" y="'+f((wt+wb)/2)+'" fill="var(--muted)" text-anchor="end">WINDOW 1.8 m</text><text x="'+(wx-30)+'" y="'+(fy+18)+'" fill="var(--muted)" text-anchor="end">INSIDE</text><text x="'+(wx+10)+'" y="'+(fy+18)+'" fill="var(--muted)">OUTSIDE, SOUTH</text></g>'+
+  (Dd>0?'<g stroke="var(--muted)" stroke-width=".8"><line x1="'+wx+'" y1="'+f(oy-18)+'" x2="'+f(ox)+'" y2="'+f(oy-18)+'"/><line x1="'+wx+'" y1="'+f(oy-22)+'" x2="'+wx+'" y2="'+f(oy-14)+'"/><line x1="'+f(ox)+'" y1="'+f(oy-22)+'" x2="'+f(ox)+'" y2="'+f(oy-14)+'"/></g><text x="'+f((wx+ox)/2)+'" y="'+f(oy-24)+'" font-family="IBM Plex Mono, monospace" font-size="10" fill="var(--muted)" text-anchor="middle">'+Dd.toFixed(2)+'</text>':'');
+}
+[city,depth,gap].forEach(el=>el.addEventListener('input',study));study();
+
+// enquiry
+const fm=document.getElementById('enqForm'),out=document.getElementById('enqOut');
+fm.addEventListener('submit',async ev=>{ev.preventDefault();const v=n=>fm.elements[n].value.trim();
+  out.hidden=false;
+  if(!v('name')){fm.elements.name.focus();out.textContent='Please add your name.';return}
+  if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v('email'))){fm.elements.email.focus();out.textContent='Please add an email address so he can reply.';return}
+  const btn=document.getElementById('e-send');btn.disabled=true;btn.textContent='Sending…';
+  try{const r=await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(fm)).toString()});if(!r.ok)throw new Error(r.status);
+    out.innerHTML='<strong>Thank you.</strong> Your enquiry has been sent, and he will reply by email.';fm.reset();
+  }catch(e){out.textContent='Your enquiry could not be sent just now. Please try again in a few minutes.'}
+  btn.disabled=false;btn.textContent='Send enquiry';
+});
+
+// credits
+const seen=new Set(),cr=[];
+PROJECTS.forEach(p=>p.imgs.forEach(im=>{const key=p.title+im[2];if(seen.has(key))return;seen.add(key);cr.push('<p><b>'+esc(p.title)+'.</b> '+esc(im[2])+'. <a href="'+esc(im[3])+'" target="_blank" rel="noopener">Source</a></p>')}));
+cr.push('<p><b>Chandigarh College of Architecture.</b> Sanyam Bahga, CC BY-SA 3.0. <a href="https://commons.wikimedia.org/wiki/File:CCA_02.JPG" target="_blank" rel="noopener">Source</a></p>');
+cr.push('<p><b>Portrait.</b> Family photograph.</p>');
+document.getElementById('credits').innerHTML=cr.join('');
+
+// nav highlight
+const links=[...document.querySelectorAll('.nav a')];
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)links.forEach(l=>l.setAttribute('aria-current',l.getAttribute('href')==='#'+e.target.id))})},{rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('main section[id]').forEach(s=>io.observe(s));
+})();
+
+// approach tabs
+(function(){
+const tabs=[...document.querySelectorAll('.tabs [role=tab]')];
+function sel(t,focus){tabs.forEach(x=>{const on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;document.getElementById(x.getAttribute('aria-controls')).hidden=!on});if(focus)t.focus()}
+tabs.forEach((t,i)=>{t.onclick=()=>sel(t);t.onkeydown=e=>{if(e.key==='ArrowRight')sel(tabs[(i+1)%tabs.length],1);if(e.key==='ArrowLeft')sel(tabs[(i-1+tabs.length)%tabs.length],1)}});
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const pr=(id,arr)=>{document.getElementById(id).innerHTML=arr.map((s,i)=>'<div class="pr"><span class="no">'+(i+1)+'</span><div><h4>'+esc(s[0])+'</h4><p>'+esc(s[1])+'</p></div></div>').join('')};
+pr('lprinciples',[
+ ["Design the window before the fitting","Daylight is the best light a house will ever have. Place windows, clerestories and light shelves so every main room gets daylight from two sides or from above, without glare."],
+ ["Build light in layers","Ambient light to fill the room, task light where hands work, accent light on what deserves attention. Put each layer on its own circuit and dimmer so the room can change with the hour."],
+ ["Light the surfaces, not the air","The eye judges brightness from walls and ceilings. Washing a wall or a ceiling with soft light makes a room feel brighter, larger and calmer than any number of downlights."],
+ ["Never see the bare source","Shield every lamp from normal sightlines: deep-set downlights, coves, baffles and shades. Glare tires the eye and flattens the space."],
+ ["Warm for living, cooler for working","Around 2700 K for living rooms and bedrooms, 3000 to 4000 K for kitchens and studies. Choose lamps with high colour rendering, 90 or above, so skin, food and materials look true."],
+ ["Keep some darkness","Contrast gives a room depth. Leave corners in shadow, dim the house in the evening, and keep night lighting low and warm so it does not disturb sleep."],
+ ["Light the facade and garden lightly","Graze a textured wall, uplight one good tree, mark the path to the door. Use shielded fittings at low levels so the night sky stays dark."],
+ ["Plan for upkeep and energy","Use efficient LED sources, as few lamp types as possible, fittings you can reach to maintain, and sensors in stores and service areas."]
+]);
+pr('iprinciples',[
+ ["Plan from how the day is lived","Start with the household’s routine: waking, cooking, gathering, working, resting. Group rooms into public, family, private and service zones before drawing a single wall."],
+ ["A clear order from public to private","Guests should reach the reception room without passing family spaces, and bedrooms should sit furthest from the front door. Houses in Kuwait and India have always made this distinction, and it still works."],
+ ["Make arrival a sequence","A threshold, a pause, then a view. The front door should open onto light and a glimpse of the court or garden, never a blank wall."],
+ ["Short routes that end in daylight","Keep corridors short and give them a reason to exist: a view, a bench, a wall of books. Every passage should lead toward a window."],
+ ["Long views make small houses generous","Align openings so you can see through two or three rooms, or diagonally across a court. A borrowed view costs nothing and adds more than floor area."],
+ ["Draw the furniture with the walls","Lay out beds, tables and seating at 1:50 before the walls are fixed, so doors, windows and switches fall in the right places and every room can be furnished well."],
+ ["Floors that suit the climate","Stone, terrazzo and tile stay cool and hold the night’s coolness through the day. Use one continuous floor through the living spaces so the plan reads as a whole, with timber or rugs where warmth underfoot matters."],
+ ["Build in storage and design for every age","Joinery designed with the architecture keeps rooms calm. Level thresholds, wide doors and a bedroom that can be on the ground floor let a family stay in the house for a lifetime."]
+]);
+
+// lighting study
+const L={day:false,amb:true,task:true,acc:true};const lsvg=document.getElementById('lightSvg'),cct=document.getElementById('cct');
+function kcol(k){const t=(k-2700)/1300;const r=255,g=Math.round(178+t*(232-178)),b=Math.round(92+t*(205-92));return 'rgb('+r+','+g+','+b+')'}
+function drawLight(){
+ const c=kcol(+cct.value);document.getElementById('cctO').textContent=cct.value+' K';
+ const n=(L.amb?1:0)+(L.task?1:0)+(L.acc?1:0);
+ const dark=L.day?0.04:Math.max(0.12,0.66-0.15*n);
+ const on=[L.day&&'daylight',L.amb&&'ambient',L.task&&'task',L.acc&&'accent'].filter(Boolean);
+ document.getElementById('ltNote').textContent=on.length?(L.day?'Daytime: ':'Evening: ')+on.join(' + '):'All lights off';
+ lsvg.innerHTML='<title id="lt-t">Section through a living room showing daylight, ambient cove light, a pendant over the table, and an accent light on a painting.</title>'+
+ '<defs><linearGradient id="gA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="'+c+'" stop-opacity=".85"/><stop offset="1" stop-color="'+c+'" stop-opacity="0"/></linearGradient>'+
+ '<linearGradient id="gT" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="'+c+'" stop-opacity=".9"/><stop offset="1" stop-color="'+c+'" stop-opacity=".15"/></linearGradient>'+
+ '<linearGradient id="gD" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="rgb(255,250,235)" stop-opacity=".9"/><stop offset="1" stop-color="rgb(255,250,235)" stop-opacity=".1"/></linearGradient>'+
+ '<radialGradient id="gP"><stop offset="0" stop-color="'+c+'" stop-opacity=".9"/><stop offset="1" stop-color="'+c+'" stop-opacity="0"/></radialGradient></defs>'+
+ '<rect x="40" y="60" width="440" height="230" fill="var(--bg)"/>'+
+ '<rect x="40" y="60" width="440" height="230" fill="rgb(8,12,28)" opacity="'+dark.toFixed(2)+'"/>'+
+ (L.day?'<polygon points="40,105 40,240 230,290 120,290" fill="url(#gD)"/><polygon points="62,62 112,62 250,290 150,290" fill="url(#gD)" opacity=".55"/>':'')+
+ (L.amb?'<rect x="40" y="62" width="440" height="80" fill="url(#gA)"/>':'')+
+ (L.task?'<polygon points="288,172 312,172 372,226 228,226" fill="url(#gT)"/>':'')+
+ (L.acc?'<polygon points="420,66 432,66 478,206 452,124" fill="url(#gT)" opacity=".75"/><ellipse cx="462" cy="165" rx="20" ry="48" fill="url(#gP)"/>':'')+
+ '<g fill="none" stroke="var(--ink)" stroke-width="1.5">'+
+  '<rect x="40" y="60" width="440" height="230"/>'+
+  '<line x1="20" y1="290" x2="500" y2="290" stroke-width="2.2"/><line x1="20" y1="60" x2="500" y2="60" stroke-width="2.2"/>'+
+  '<rect x="34" y="105" width="12" height="135" fill="var(--surface)"/><line x1="40" y1="105" x2="40" y2="240"/>'+
+  '<rect x="62" y="54" width="50" height="12" fill="var(--surface)"/>'+
+  '<path d="M48 78 h424 v-8" stroke-width="1.2"/>'+
+  '<line x1="300" y1="60" x2="300" y2="160"/><path d="M284 172 q16 -22 32 0 z" fill="var(--ink)"/>'+
+  '<line x1="236" y1="226" x2="364" y2="226" stroke-width="2"/><line x1="248" y1="226" x2="248" y2="290"/><line x1="352" y1="226" x2="352" y2="290"/>'+
+  '<rect x="455" y="128" width="16" height="74" fill="var(--surface)"/>'+
+  '<path d="M418 60 v6 h16" stroke-width="1.2"/>'+
+  '<path d="M90 290 v-34 h96 v34 M90 256 v-26 h10 v26 M176 256 v-26 h10 v26" stroke-width="1.2"/>'+
+ '</g>'+
+ '<g font-family="IBM Plex Mono, monospace" font-size="9.5" fill="var(--muted)">'+
+  '<text x="120" y="96">AMBIENT · COVE</text><text x="314" y="150">TASK · PENDANT</text><text x="330" y="112">ACCENT ·</text><text x="330" y="124">PICTURE LIGHT</text><text x="52" y="312">DAYLIGHT · WINDOW AND ROOFLIGHT</text>'+
+ '</g>';
+}
+document.querySelectorAll('[data-l]').forEach(b=>b.onclick=()=>{const k=b.dataset.l;L[k]=!L[k];b.setAttribute('aria-pressed',L[k]);drawLight()});
+cct.addEventListener('input',drawLight);drawLight();
+
+// plan study
+const O={zones:true,route:false,views:false};const psvg=document.getElementById('planSvg');
+const S=30,X0=25,Y0=18,px=x=>(X0+x*S).toFixed(1),py=y=>(Y0+y*S).toFixed(1);
+const Z={pub:["var(--z-pub)","Public: entrance and reception"],fam:["var(--z-fam)","Family: living, dining, court"],pri:["var(--z-pri)","Private: bedrooms and bath"],svc:["var(--z-svc)","Service: kitchen and store"]};
+const R=[["RECEPTION",0,0,4,4,"pub"],["ENTRANCE",0,4,4,2,"pub"],["KITCHEN",0,6,4,4,"svc"],["FAMILY ROOM",4,0,5,3,"fam"],["COURT",4,3,5,4,"fam",1],["LIVING",4,7,5,3,"fam"],["BEDROOM",9,0,3,3,"pri"],["BEDROOM",12,0,3,3.5,"pri"],["BATH",9,3,3,2,"pri"],["STORE",9,5,3,2,"svc"],["MAIN BEDROOM",12,3.5,3,3.5,"pri"],["DINING",9,7,3,3,"fam"],["TERRACE",12,7,3,3,"fam",1]];
+document.getElementById('planLegend').innerHTML=Object.values(Z).map(z=>'<span><i style="background:'+z[0]+'"></i>'+z[1]+'</span>').join('');
+function line(pts){return pts.map(p=>px(p[0])+','+py(p[1])).join(' ')}
+function drawPlan(){
+ let h='<defs><marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="var(--red)"/></marker></defs>';
+ h+='<rect x="'+px(-0.6)+'" y="'+py(10)+'" width="'+(16.2*S)+'" height="'+(1.1*S)+'" fill="var(--z-fam)" opacity=".5"/>';
+ R.forEach(r=>{if(O.zones)h+='<rect x="'+px(r[1])+'" y="'+py(r[2])+'" width="'+r[3]*S+'" height="'+r[4]*S+'" fill="'+Z[r[5]][0]+'"/>'});
+ h+='<g fill="none" stroke="var(--ink)" stroke-width="1.3">';
+ R.forEach(r=>{h+='<rect x="'+px(r[1])+'" y="'+py(r[2])+'" width="'+r[3]*S+'" height="'+r[4]*S+'"'+(r[6]?' stroke-dasharray="4 3"':'')+'/>'});
+ h+='<rect x="'+px(0)+'" y="'+py(0)+'" width="'+15*S+'" height="'+10*S+'" stroke-width="3"/>';
+ h+='<rect x="'+px(4.6)+'" y="'+py(3.6)+'" width="'+3.8*S+'" height="'+2.8*S+'" stroke="var(--muted)" stroke-dasharray="2 3" stroke-width="1"/>';
+ h+='<circle cx="'+px(6.5)+'" cy="'+py(5)+'" r="22" stroke="var(--muted)"/><circle cx="'+px(6.5)+'" cy="'+py(5)+'" r="3" fill="var(--muted)"/>';
+ h+='</g>';
+ h+='<line x1="'+px(0)+'" y1="'+py(4.6)+'" x2="'+px(0)+'" y2="'+py(5.4)+'" stroke="var(--surface)" stroke-width="5"/>';
+ h+='<g font-family="IBM Plex Mono, monospace" font-size="8.6" fill="var(--text)" text-anchor="middle">';
+ R.forEach(r=>{h+='<text x="'+px(r[1]+r[3]/2)+'" y="'+(+py(r[2])+15)+'">'+r[0]+'</text>'});
+ h+='<text x="'+px(7.5)+'" y="'+(+py(10.6)+3)+'" fill="var(--muted)">GARDEN · SOUTH</text><text x="'+px(-0.5)+'" y="'+(+py(5)-12)+'" text-anchor="start" fill="var(--red)">IN</text></g>';
+ if(O.route){h+='<g fill="none" stroke="var(--red)" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arr)"><polyline points="'+line([[-0.6,5],[2,5],[2,2.2]])+'"/><polyline points="'+line([[2,5],[4.4,5],[4.4,6.6],[5.4,6.6],[5.4,8.8]])+'"/><polyline points="'+line([[5.4,6.6],[8.6,6.6],[8.6,3.4],[11.2,3.4]])+'"/></g>'}
+ if(O.views){h+='<g stroke="var(--red)" stroke-width="1.1" fill="none"><line x1="'+px(1)+'" y1="'+py(5)+'" x2="'+px(8.8)+'" y2="'+py(5)+'"/><line x1="'+px(5)+'" y1="'+py(9.5)+'" x2="'+px(8.6)+'" y2="'+py(0.4)+'"/><line x1="'+px(10.5)+'" y1="'+py(8.5)+'" x2="'+px(13)+'" y2="'+py(10.8)+'"/></g><g fill="var(--red)"><circle cx="'+px(1)+'" cy="'+py(5)+'" r="4"/><circle cx="'+px(5)+'" cy="'+py(9.5)+'" r="4"/><circle cx="'+px(10.5)+'" cy="'+py(8.5)+'" r="4"/></g>'}
+ psvg.innerHTML='<title id="pl-t">Plan of a courtyard house showing zones from public to private, the route through the house, and long views.</title>'+h;
+ document.getElementById('planLegend').hidden=!O.zones;
+}
+document.querySelectorAll('[data-o]').forEach(b=>b.onclick=()=>{const k=b.dataset.o;O[k]=!O[k];b.setAttribute('aria-pressed',O[k]);drawPlan()});
+drawPlan();
+})();
+
+</script>
+
+</body>
+</html>
