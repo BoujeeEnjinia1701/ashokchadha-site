@@ -9,7 +9,7 @@ A single static page with no build step: `index.html`, images in `img/`, and Net
 - Introduction with portrait and key figures
 - Selected work: 15 projects with photo galleries and credits
 - Career milestones and the full project record from his CV
-- Approach: principles for the sustainable house, light, interiors and the plan, and exterior spaces, with interactive diagrams
+- Approach: principles for the sustainable house, light, interiors and the plan, exterior spaces, and Vastu, with interactive diagrams
 - Commissions: six fixed-scope services
 - Enquiry form, handled by Netlify Forms
 

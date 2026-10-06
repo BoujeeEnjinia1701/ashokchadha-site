@@ -194,6 +194,8 @@ dialog::backdrop{background:rgba(14,18,35,.62)}
 .tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--ink)}
 .tabs button:focus-visible{outline:2px solid var(--red);outline-offset:2px}
 .ltoggles{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.vinfo{margin-top:12px;font-size:15.5px;min-height:3.2em}
+.vinfo b{font-family:var(--f-display);color:var(--ink)}
 .legend{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:10px;font-size:13px;color:var(--muted)}
 .legend i{display:inline-block;width:12px;height:12px;margin-right:6px;vertical-align:-1px;border:1px solid var(--rule)}
 
@@ -370,6 +372,7 @@ details.credits>summary{cursor:pointer;font-family:var(--f-display);font-weight:
       <button role="tab" id="tab-light" aria-controls="pan-light" aria-selected="false" tabindex="-1"><span class="tn">02</span>Light</button>
       <button role="tab" id="tab-int" aria-controls="pan-int" aria-selected="false" tabindex="-1"><span class="tn">03</span>Interiors and the plan</button>
       <button role="tab" id="tab-ext" aria-controls="pan-ext" aria-selected="false" tabindex="-1"><span class="tn">04</span>Exterior spaces</button>
+      <button role="tab" id="tab-vas" aria-controls="pan-vas" aria-selected="false" tabindex="-1"><span class="tn">05</span>Vastu</button>
     </div>
 
     <div role="tabpanel" id="pan-sus" aria-labelledby="tab-sus">
@@ -493,6 +496,23 @@ details.credits>summary{cursor:pointer;font-family:var(--f-display);font-weight:
       </div>
       <div class="principles" id="xprinciples"></div>
     </div>
+    <div role="tabpanel" id="pan-vas" aria-labelledby="tab-vas" hidden>
+      <div class="ap-intro">
+        <div>
+          <p>Vastu Shastra is the Indian tradition of architecture and planning. It sets out how a house should sit on its plot, which way it should face, and where each room belongs. Many clients in India ask for a house that follows it, and he plans with it from the first sketch rather than adjusting a finished design.</p>
+          <p>Much of Vastu matches what the climate of the subcontinent asks for anyway. The northeast is kept open to the gentle morning sun. The southwest carries the heaviest walls against the hot afternoon sun. The centre stays open, as a court, to bring in light and air. Where a rule conflicts with the site, the climate or the building code, he finds the alternative the tradition itself allows.</p>
+        </div>
+        <figure>
+          <svg id="vasSvg" viewBox="0 0 380 380" role="img" aria-labelledby="va-t"><title id="va-t">Simplified Vastu grid of nine zones, with north at the top, showing the recommended use of each direction.</title></svg>
+          <div class="ltoggles" role="group" aria-label="Grid overlays">
+            <button type="button" class="chip" data-v="sun" aria-pressed="false">Sun path</button>
+          </div>
+          <p class="vinfo" id="vasInfo" aria-live="polite"></p>
+          <figcaption><span>Fig. 5 · The nine zones of a Vastu plan</span><span id="vasCap">Select a zone</span></figcaption>
+        </figure>
+      </div>
+      <div class="principles" id="vprinciples"></div>
+    </div>
 
   </div>
 </section>
@@ -508,7 +528,7 @@ details.credits>summary{cursor:pointer;font-family:var(--f-display);font-weight:
     <div class="avail">Now accepting commissions</div>
     <div class="offers">
       <div class="offer"><span class="no">01</span><h3>Concept design for a new house</h3><p>From a site visit and brief to a complete concept you can take to a builder or local architect.</p>
-        <ul><li>Site and climate analysis</li><li>Plans, sections and elevations at 1:100</li><li>Courtyards, terraces and garden layout</li><li>Hand-drawn perspective</li><li>Passive design strategy</li></ul></div>
+        <ul><li>Site and climate analysis</li><li>Plans, sections and elevations at 1:100</li><li>Courtyards, terraces and garden layout</li><li>Vastu-aligned planning on request</li><li>Hand-drawn perspective</li><li>Passive design strategy</li></ul></div>
       <div class="offer"><span class="no">02</span><h3>Renovation feasibility study</h3><p>Before you spend on an existing house: what can change, what it will involve, and what to keep.</p>
         <ul><li>Condition survey and measured sketches</li><li>Two or three options in sketch plan</li><li>Approvals and sequencing notes</li></ul></div>
       <div class="offer"><span class="no">03</span><h3>Design review</h3><p>A second opinion on drawings you already have, from someone who has managed design on projects of every size.</p>
@@ -894,6 +914,44 @@ function drawExt(){
 }
 document.querySelectorAll('[data-x]').forEach(b=>b.onclick=()=>{const k=b.dataset.x;XO[k]=!XO[k];b.setAttribute('aria-pressed',XO[k]);drawExt()});
 drawExt();
+
+pr('vprinciples',[
+ ["Start from the directions","Fix true north on the site survey before anything else. In Vastu, every room’s place follows from orientation, so the plan is drawn around it from the first sketch."],
+ ["Keep the centre open","The Brahmasthan, the centre of the house, stays free of walls, columns and heavy fixtures. In practice it becomes a court or a double-height space that brings light and air into the heart of the plan."],
+ ["Enter from the north or east","The main entrance faces north or east, where it meets the morning light. On plots where that is impossible, the tradition’s own rules for the other sides guide where the door goes."],
+ ["Kitchen in the southeast","The southeast is the zone of fire, so the kitchen goes there, with the cook facing east. It catches the early morning sun."],
+ ["Weight in the southwest","The main bedroom, heavy storage and the staircase sit in the southwest, with the thickest walls and fewest openings, which is also the side that faces the hottest afternoon sun."],
+ ["Light and open in the northeast","Keep the northeast low, open and uncluttered: a prayer room, a water feature or a garden. Avoid toilets, stores and heavy masses there."],
+ ["Levels fall to the north and east","Plots, floors and roofs slope down toward the north and east, and rainwater drains that way, while the southwest stays the highest part of the site."],
+ ["Tradition, climate and code together","Vastu works best alongside good building science, not instead of it. Where a rule clashes with the site, the code or comfort, he looks for the alternative the tradition permits rather than forcing a poor plan."]
+]);
+const VZ=[
+ ["NW","Northwest","Vayu, air","Guest room, storage or garage. Suited to movement and short stays."],
+ ["N","North","Kubera, wealth","Living room, entrance, study or office. Keep it open and well lit."],
+ ["NE","Northeast","Ishanya, the divine","Prayer room, water feature, garden or open space. Keep it light, low and uncluttered."],
+ ["W","West","Varuna, water","Dining room, children’s bedroom or study. A good place for an overhead water tank."],
+ ["C","Centre","Brahmasthan","Kept open, as a court or a double-height space. No walls, columns or heavy fixtures."],
+ ["E","East","Indra, the sun","Main entrance, living room and large windows for the morning sun."],
+ ["SW","Southwest","Nairutya, the earth","Main bedroom, heavy storage and the staircase. The thickest walls and fewest openings."],
+ ["S","South","Yama","Bedrooms, stores and solid walls, with smaller openings."],
+ ["SE","Southeast","Agni, fire","Kitchen, with the cook facing east, and electrical equipment."]
+];
+let vsel=4,vsun=false;const vsvg=document.getElementById('vasSvg');
+function drawVas(){
+ const X=40,Y=40,C=100;let h='<title id="va-t">Simplified Vastu grid of nine zones, with north at the top, showing the recommended use of each direction.</title>';
+ VZ.forEach((z,i)=>{const cx=X+(i%3)*C,cy=Y+Math.floor(i/3)*C,on=i===vsel;
+  h+='<g class="vz" data-i="'+i+'" tabindex="0" role="button" aria-label="'+z[1]+': '+z[3]+'" style="cursor:pointer"><rect x="'+cx+'" y="'+cy+'" width="'+C+'" height="'+C+'" fill="'+(on?'var(--z-pub)':(i===4?'var(--z-fam)':'var(--surface)'))+'" stroke="var(--ink)" stroke-width="'+(on?2.4:1.2)+'"/>'+
+  '<text x="'+(cx+C/2)+'" y="'+(cy+C/2-4)+'" text-anchor="middle" font-family="Archivo, sans-serif" font-weight="700" font-size="17" fill="var(--ink)">'+z[0]+'</text>'+
+  '<text x="'+(cx+C/2)+'" y="'+(cy+C/2+14)+'" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9" fill="var(--muted)">'+z[2].split(',')[0].toUpperCase()+'</text></g>'});
+ h+='<g fill="var(--ink)" font-family="Archivo, sans-serif" font-weight="700" font-size="12" text-anchor="middle"><text x="190" y="26">N</text><text x="190" y="366">S</text><text x="20" y="194">W</text><text x="360" y="194">E</text></g>';
+ if(vsun){h+='<g fill="none" stroke="var(--red)" stroke-width="1.6" stroke-dasharray="6 4"><path d="M352 120 Q 352 372 190 372 Q 28 372 28 120"/></g><g fill="var(--red)" font-family="IBM Plex Mono, monospace" font-size="9"><circle cx="352" cy="120" r="5"/><circle cx="28" cy="120" r="5"/></g>'}
+ vsvg.innerHTML=h;
+ document.getElementById('vasCap').textContent=vsun?'Sun rises east, peaks south, sets west':'Select a zone';
+ const z=VZ[vsel];document.getElementById('vasInfo').innerHTML='<b>'+z[1]+' · '+z[2]+'.</b> '+z[3];
+ vsvg.querySelectorAll('.vz').forEach(g=>{const f=()=>{vsel=+g.dataset.i;drawVas();const n=vsvg.querySelector('.vz[data-i="'+vsel+'"]');n&&n.focus()};g.onclick=f;g.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();f()}}});
+}
+document.querySelector('[data-v="sun"]').onclick=e=>{vsun=!vsun;e.currentTarget.setAttribute('aria-pressed',vsun);drawVas()};
+drawVas();
 
 // lighting study
 const L={day:false,amb:true,task:true,acc:true};const lsvg=document.getElementById('lightSvg'),cct=document.getElementById('cct');
