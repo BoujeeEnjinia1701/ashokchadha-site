@@ -262,6 +262,13 @@ details.credits>summary{cursor:pointer;font-family:var(--f-display);font-weight:
   .nav{width:100%}
 }
 </style>
+<!-- Google Analytics (GA4) with Consent Mode -->
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',region:["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'granted'});
+try{var c=localStorage.getItem('ga-consent');if(c)gtag('consent','update',{analytics_storage:c});}catch(e){}
+gtag('js',new Date());gtag('config','G-C5MK9DMKTL');</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C5MK9DMKTL"></script>
 </head>
 <body>
 
@@ -1024,5 +1031,11 @@ drawPlan();
 
 </script>
 
+<div id="ga-notice" role="region" aria-label="Analytics notice" hidden style="position:fixed;left:16px;bottom:16px;z-index:9999;max-width:340px;background:#1E1C19;color:#F4EFE4;font:14px/1.5 system-ui,-apple-system,Segoe UI,sans-serif;padding:14px 16px;border-radius:6px;box-shadow:0 10px 30px -12px rgba(0,0,0,.5)">
+<p style="margin:0 0 10px">This site uses Google Analytics to count visits. No ads, no tracking across sites.</p>
+<div style="display:flex;gap:8px"><button type="button" data-ga="granted" style="font:inherit;cursor:pointer;border:0;border-radius:4px;padding:6px 14px;background:#F4EFE4;color:#1E1C19">Accept</button><button type="button" data-ga="denied" style="font:inherit;cursor:pointer;border:1px solid rgba(244,239,228,.5);border-radius:4px;padding:6px 14px;background:transparent;color:#F4EFE4">Decline</button></div>
+</div>
+<script>(function(){var n=document.getElementById('ga-notice');if(!n)return;var c=null;try{c=localStorage.getItem('ga-consent')}catch(e){}if(!c)n.hidden=false;
+n.addEventListener('click',function(e){var v=e.target.getAttribute&&e.target.getAttribute('data-ga');if(!v)return;try{localStorage.setItem('ga-consent',v)}catch(x){}if(window.gtag)gtag('consent','update',{analytics_storage:v});n.hidden=true;});})();</script>
 </body>
 </html>
